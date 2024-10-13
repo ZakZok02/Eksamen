@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: #cdecf5;
     margin: 0;
@@ -46,3 +47,23 @@ nav ul li a{
 }
 
 
+=======
+.grid-container{
+    display: flex;
+    justify-content: center;
+    border: 10px solid black;
+    align-items: center;
+}
+
+.grid-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 2px;
+    background-color: aquamarine;
+}   
+
+.grid-item-1{
+background-color: aquamarine;
+}
+
+>>>>>>> cd6cbca44c467527c2d5979d825fcdbf90f9db10
