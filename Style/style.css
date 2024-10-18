@@ -1,83 +1,97 @@
 
 body{
-    background-color: #cdecf5;
+    background-image: url('../images/587966.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    display:flex;
-    flex-direction:column;
     height:200vh;
+    width: 100%;
 }
 
-nav{
-    margin:2px;
-    border: 5px solid black;
-    border-radius: 6px;
-    position:relative;
-    background-color:#ffffff;
-}
+
 
 
 nav ul{
+
     display:flex;
-    flex-direction:row;
-    justify-content: center;
+    justify-content:flex-end;
+    list-style-type: none;
+    
 }
 
 nav ul li{
-    list-style: none;
-    padding-left: 20px;
-    padding-right:20px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-
+  
+    padding-right: 0.5rem;
+    padding-top: 2rem;
+  
+    
 
 }
 
 nav ul li a{
 
-    color:black;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
     text-decoration: none;
-    position:relative;
-    margin-right: 100px;
-    margin-left: 3px;
+    margin-right: 5rem;
 
+   
+
+}
+
+nav ul li a:hover{
+    font-size: 1.3rem;
+    color:azure;
+    
 }
 
 
 
 .oslomet_logo{
-    margin-right:auto;
-    margin-left: 90px;
-    margin-top: -16px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    height: 85px;
+    position: absolute;
+    top: -0.5rem;           /* Adjust vertical position */
+    left: 0.8rem;          /* Adjust horizontal position */
+    z-index: 10;         /* Ensure the logo is above other elements */
+    text-shadow: 0.190rem 0.180rem 0.350rem #ffd60a;
+    color: black;
+    font-size:2rem;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:30px auto 0 90px;
+    padding-top: 0.2rem;   
     
     
 }
 
-<<<<<<< HEAD
-/* .grid-container{
-=======
-
-
-.grid-container{
->>>>>>> 041c0bfe2296553529076477e48d61116fe3626e
-    display: flex;
-    justify-content: center;
-    border: 10px solid black;
-    align-items: center;
+.oslomet_logo:hover {
+   
+    text-shadow: 0.19rem 0.18rem 0.35rem #fff; /* text-shadow but taking the white shadow when hovering*/
+    font-size: 2rem; /* Prevent size change like other links */
 }
 
-.grid-item {
-    width: 150px;
-    height: 150px;
-    border-radius: 2px;
-    background-color: aquamarine;
-}   
+.fakultet{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0.170rem 0.180rem 0.350rem #000000;
+}
 
-.grid-item-1{
-background-color: aquamarine;
-} */
+.fakultet p {
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-decoration: none;
+    
+}
+
+
 
 
