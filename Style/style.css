@@ -22,7 +22,6 @@ body{
 }
 
 
-
 nav ul{
 
     display:flex;
@@ -92,7 +91,9 @@ nav ul li a:hover{
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  text-shadow: 0.170rem 0.180rem 0.350rem #000000;
+  background-color: #00000080; /* Semi-transparent background  to make the texts visible to read*/
+  padding: 10px;
+  text-shadow: 2px 2px 5px #000000;
 
 }
 
@@ -104,6 +105,7 @@ nav ul li a:hover{
    
     
 }
+
 
 /* Main container for white background */
 main {
