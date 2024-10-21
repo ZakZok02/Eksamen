@@ -12,7 +12,7 @@ body{
 .half-page-bg {
    
     width: 100%;
-    height: 100vh; /* Cover half of the viewport height */
+    height: 120vh; /* Cover half of the viewport height */
     background-image: url('../images/587966.webp');
     background-size: cover; /* Ensure the background image covers the entire section */
     background-position: center;
@@ -35,6 +35,7 @@ nav ul li{
  
    padding-right: 0.5rem;
     padding-top: 2rem;
+    font-weight: 800;
   
     
 
@@ -43,7 +44,7 @@ nav ul li{
 nav ul li a{
 
     color: white;
-    font-weight: 300;
+    font-weight: 2.5rem;
     font-size: 1rem;
     text-decoration: none;
     margin-right: 5rem;
@@ -86,7 +87,7 @@ nav ul li a:hover{
   position:absolute;
   font-size: 20px;
   font-weight: 500;
-  top: 37%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -132,7 +133,7 @@ main {
     border: 0.1rem solid black;
     border-radius: 2rem; /* Smooth edges for the section */
     box-sizing: border-box;
-    background-color: #a2d2ff;
+    background-color: #00000080;
     
 }
 
