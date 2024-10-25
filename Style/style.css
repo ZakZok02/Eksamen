@@ -114,8 +114,6 @@ h1{
 }
     
 
-
-
 .wrapper{
     display: flex;
     padding-top: 10px;
@@ -204,15 +202,17 @@ details{
 
 
     .img-container{
-        height: 50vh;
+        height: 100vh;
         background-image:url("Bilder/studenter.jpg");
         background-size: cover;
-        background-repeat: no-repeat;
+        
 
     }
 
     .studie-info {
-        background-color:  rgba(255, 255, 255, 0.8);;
+        background-color:  rgba(255, 255, 255, 0.8);
+        justify-self: center;
+        width: fit-content;
     }
     .flex-innhold{
         align-items: flex-start;
@@ -233,20 +233,44 @@ details{
     display: grid;
     width: auto;
     height: auto;
-    grid-template-columns: repeat(4,0.71fr);
+    grid-template-columns: repeat(4,4fr);
     grid-template-rows: repeat(2, 20vh);
     grid-template-areas: 
     "forslag-1 forslag-2 forslag-3 forslag-4 " 
     "forslag-5 forslag-6 forslag-7 forslag-8" ;
     gap: 0.5em;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .forslag-1, .forslag-2, .forslag-3, .forslag-4, .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
-    border-radius: 0.4em;
-    padding: 1.1em;
+    padding: 3em;
+    border-radius: 0.3em;
     background-color: #f0bf4c;
+    font-size: 1em;
 }
+
+
+.Forslag-til-studie .forslag-2{
+        display: grid; 
+        align-items: center; 
+        grid-template-areas: 
+        "info-itemForslag";
+        grid-template-columns: 1.9fr;
+        text-align: center;
+    }
+
+.info-itemForslag{
+    padding-top: 2em;
+    font-size: 3em;
+    margin: 0.1em;
+    background-color: #f0bf4c;
+    border-radius: 0.2em;
+    font-size: 0.6em;
+}
+
+
+
 
 p{
     min-width: 300px;   
