@@ -201,18 +201,23 @@ details{
 }
 
 
-    .img-container{
-        height: 100vh;
-        background-image:url("Bilder/studenter.jpg");
-        background-size: cover;
-        
+.img-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-image: url("../images/studenter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    position: relative;
 
-    }
+}
 
     .studie-info {
         background-color:  rgba(255, 255, 255, 0.8);
-        justify-self: center;
-        width: fit-content;
+        width: 100%;
+        padding:2em;
     }
     .flex-innhold{
         align-items: flex-start;
@@ -282,10 +287,3 @@ footer {
     background-color: #f0bf4c;
     height: 15em;
 }
-
-
-
-
-
-
-
