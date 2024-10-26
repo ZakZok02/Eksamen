@@ -64,10 +64,6 @@ h1{
     padding: 2em;
 }
 
-/* .studie-info p{
-    min-width: 300px;   
-    max-width: 600px;
-} */
 
 
 .flex-innhold{
@@ -84,13 +80,7 @@ h1{
 
 }
 
-/* .info-item {
-    margin: 2em;
-    padding: 1em;
-    background-color: #f0bf4c;
-    border-radius: 0.3em;
-    font-size: 0.8em;
-} */
+
 .info-item1, .info-item2, .info-item3{
     margin: 1em;
     padding: 1em;
