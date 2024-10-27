@@ -194,12 +194,21 @@ details {
     max-width: 600px;
 }
 
+.firstyear, .secondyear, .thirdyear{
+    border-bottom: 1px dashed black;
+    margin-top: 2em;
+    
+}
+
  h3{
     margin: 1.7em auto;
 }
 
-.semester_title h4,h5{
-    margin-bottom: 1.8em;
+.semester_title h4{
+    
+    border-bottom: 1px solid #343a40;
+    margin-bottom: 2.2em;
+  
 }
 
 .valg ul{
@@ -212,7 +221,7 @@ details {
 
 
 
-.firstsemester_table, .secondsemester_table, .thirdsemester_table{
+.firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 3em;
@@ -220,6 +229,7 @@ details {
 }
 caption {
     font-weight: bold;
+    font-size: 0.9em;
     margin-bottom: 2em;
     text-align: left;
     
@@ -237,6 +247,15 @@ caption {
     border: 2px solid #343a40;
     text-align: center;
   }
+
+  tbody tr:nth-child(odd) {
+    background-color: #8ecae6
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #ced4da;
+        }
+        
 footer {
     background-color: #f0bf4c;
     height: 15em;
