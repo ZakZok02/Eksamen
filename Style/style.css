@@ -260,7 +260,64 @@ background-color: #8ecae6
 tbody tr:nth-child(even) {
     background-color: #ced4da;
     }
-    
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .hero {
+        background-image: url();
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .overlay {
+        background-color: #f2e9e4;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+        color: #fff;
+    }
+    p {
+        font-size: 1.2em;
+    }        
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    article {
+        background-color: #f2e9e4;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    article:hover {
+        transform: translateY(-5px);
+    }
+    article img {
+        width: 100%;
+        height: 200;
+        object-fit: cover;
+    }
+    article section {
+        padding: 20px;
+    }
+    article h2 {
+        margin-top: 0;
+        color: #333;
+    }
+    article p {
+        color: #666;
+    }
 .footer {
     background-color: #f2e9e4;
     color: #333;
@@ -482,14 +539,7 @@ tbody tr:nth-child(even) {
 
         padding: 0.3em;
        
-    }
-
-    
-
-   
-
-    
-
+    }   
     
 }
 
