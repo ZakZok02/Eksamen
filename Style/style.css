@@ -5,7 +5,7 @@
 
 }
 header{
-    background-color: #f0bf4e;
+    background-color: #f2e9e4;
     height: 4em;
     margin-bottom: 1em;
 }
@@ -85,7 +85,7 @@ h1{
 .info-item1, .info-item2, .info-item3{
     margin: 1em;
     padding: 1em;
-    background-color: #f0bf4c;
+    background-color: #c9ada7;
     border-radius: 0.3em;
     font-size: 0.8em; 
 }
@@ -119,7 +119,7 @@ h1{
 }
 
 details {
-    background-color: #f0bf4c;
+    background-color: #c9ada7;
     padding: 1.5em;
     border-radius: 0.3em;
     cursor: pointer;
@@ -134,7 +134,7 @@ details {
 .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {
     border-radius: 0.4em;
     padding: 1.1em;
-    background-color: #f0bf4c;
+    background-color: #c9ada7;
     margin-bottom: 2em;
 }
 
@@ -166,7 +166,7 @@ details {
 .forslag-1, .forslag-2, .forslag-3, .forslag-4, .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
     padding: 2em;
     border-radius: 0.3em;
-    background-color: #f0bf4c;
+    background-color: #c9ada7;
     font-size: 1.5em;
 }
 
@@ -184,7 +184,7 @@ details {
     padding-top: 2em;
     font-size: 3em;
     margin: 0.1em;
-    background-color: #f0bf4c;
+    background-color: #c9ada7;
     border-radius: 0.2em;
     font-size: 0.6em;
 }
@@ -215,17 +215,18 @@ details {
 }
 
 .valg ul{
-    margin-bottom: 1.8em;
+    margin-bottom: 3em;
     margin-left: 2em;
 }
 .valg ul li{
     margin-bottom: 1em;
+    font-weight: bold;
 }
 
 
 
 .firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table{
-    display: block;
+    /* display: block; */
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 3em;
@@ -239,32 +240,105 @@ caption {
     
 }
 
-  thead th {
-    background-color: #f0bf4c;
-    color: #000;
-    padding: 0.5em;
-    border: 2px solid #343a40;
-  }
-  
-  tbody td {
-    padding: 0.5em;
-    border: 2px solid #343a40;
-    text-align: center;
-  }
-
-  tbody tr:nth-child(odd) {
-    background-color: #8ecae6
-    }
-
-    tbody tr:nth-child(even) {
-        background-color: #ced4da;
-        }
-        
-footer {
-    background-color: #f0bf4c;
-    height: 15em;
+thead th {
+background-color: #ffff;
+color: #000;
+padding: 0.5em;
+border: 2px solid #343a40;
 }
 
+tbody td {
+padding: 0.5em;
+border: 2px solid #343a40;
+text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #8ecae6
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ced4da;
+    }
+    
+.footer {
+    background-color: #f2e9e4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+.footer h4 {
+    color: #0056b3;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem; /* Increased from 1rem */
+}
+.footer address {
+    font-style: normal;
+    line-height: 1.8; /* Increased from 1.6 */
+    margin-bottom: 1rem; /* Added for spacing */
+}
+.footer p {
+    margin: 1.5rem 0;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer li {
+    margin-bottom: 0.8rem; /* Increased from 0.5rem */
+}
+.footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    color: #0056b3;
+}
+.social-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem; /* Added for spacing */
+  
+}
+.social-links a {
+    background-color: #0056b3;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    transition: background-color 0.3s ease;
+}
+
+
+.social-links a:hover {
+    background-color: red;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 2.5rem; /* Increased from 2rem */
+    padding-top: 1.5rem; /* Increased from 1rem */
+    text-align: center;
+}
 
 /* Mobile size screen */
 @media (max-width: 600px) {
