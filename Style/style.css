@@ -5,7 +5,7 @@
 
 }
 header{
-    background-color: #F2F4F4;
+    background-color: #f2e9e4;
     height: 4em;
     margin-bottom: 1em;
 }
@@ -45,15 +45,57 @@ nav ul li a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: white;
 }
 
-h1{ 
+@media (max-width: 1250px) {
+
+    .img-container img{
+        display: none;
+    }
+
+
+    .img-container{
+        height: auto;
+        width:100%;
+        align-items: center;
+        background-image:url("../images/studenter.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position:relative;
+
+    }
+
+    .studie-info {
+        /* position: absolute;  */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+     
+    }
+
+    .studie-info h1{
+        padding-top: 0.8rem;
+        
+    }
+
+}
+
+.studie-info h1{ 
     font-size: 2em;
+    color: #000;
 }
 
 .img-container img{
-    padding-left: 8.3em;
-    width: 50%;
+    width: 60%;
     height: auto;
 
 }
@@ -61,7 +103,7 @@ h1{
 .studie-info {
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    padding: 2em;
+    padding: 1em;
 }
 
 
@@ -87,7 +129,7 @@ h1{
 .info-item1, .info-item2, .info-item3, .info-item4, .info-item5, .info-item6, .info-item7{
     margin: 1em;
     padding: 1em;
-    background-color: #c9ada7;
+    background-color: #f2e9e4;
     border-radius: 0.3em;
     font-size: 0.8em; 
 }
@@ -126,7 +168,7 @@ h1{
 }
 
 details {
-    background-color: #c9ada7;
+    background-color: #F4F5F7;
     padding: 1.5em;
     border-radius: 0.3em;
     cursor: pointer;
@@ -141,7 +183,7 @@ details {
 .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {
     border-radius: 0.4em;
     padding: 1.1em;
-    background-color: #c9ada7;
+    background-color: #F4F5F7;
     margin-bottom: 2em;
 }
 
@@ -173,7 +215,7 @@ details {
 .forslag-1, .forslag-2, .forslag-3, .forslag-4, .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
     padding: 2em;
     border-radius: 0.3em;
-    background-color: #c9ada7;
+    background-color: #F4F5F7;;
     font-size: 1.5em;
 }
 
@@ -191,7 +233,7 @@ details {
     padding-top: 2em;
     font-size: 3em;
     margin: 0.1em;
-    background-color: #c9ada7;
+    background-color: #F4F5F7;;
     border-radius: 0.2em;
     font-size: 0.6em;
 }
@@ -305,10 +347,6 @@ tbody tr:nth-child(even) {
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
-    article:hover {
-        transform: translateY(-5px);
     }
     article img {
         width: 100%;
@@ -406,6 +444,11 @@ tbody tr:nth-child(even) {
 
 /* Mobile size screen */
 @media (max-width: 600px) {
+    .img-container img{
+        height: auto;
+        width: 50%;
+    }
+    
      
     nav ul{
        
@@ -425,44 +468,20 @@ tbody tr:nth-child(even) {
         width: 100%;
         text-align: center;
 
-    } 
 
-    .img-container img{
-        display: none;
     }
-
 
     .img-container{
-        height: auto;
-        width:100%;
-        align-items: center;
-        background-image:url("../images/studenter.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position:relative;
-
-    }
-
-    .studie-info {
-        /* position: absolute;  */
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
-        padding: 0.7em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-     
     }
-
-    .studie-info h1{
-        padding-top: 0.8rem;
-        
+    .info-item1, .info-item2, .info-item3, 
+    .info-item4, .info-item5, .info-item6, .info-item7 {
+        margin: 1em auto; /* Center-align and add spacing */
+        padding: 1em;
+        border-radius: 0.3em;
+        font-size: 0.8em;
     }
+    
 
    
        /* Stacking flex-innhold items vertically */
@@ -502,15 +521,16 @@ tbody tr:nth-child(even) {
        
         grid-template-columns: repeat(2,3fr);
         grid-template-rows: auto; /* Single column for mobile */
-        gap: 0.7em; /* Further reduce gap */
+        gap: 0.3em; /* Further reduce gap */
         height:auto;
         grid-template-areas: 
-        "forslag-1 forslag-2"
+        "forslag-1" forslag-2"
         "forslag-3 forslag-4 " 
         "forslag-5 forslag-6 "
         "forslag-7 forslag-8" ;
 
         margin: 1em 0.5em;
+        padding-left: 0%;
     }
 
     /* Adjust individual suggestion boxes */
