@@ -5,7 +5,7 @@
 
 }
 header{
-    background-color: #f2e9e4;
+    background-color: #F2F4F4;
     height: 4em;
     margin-bottom: 1em;
 }
@@ -73,7 +73,9 @@ h1{
     margin-top: 1em;
     text-align: center;
     grid-template-areas: 
-    "info-item1 info-item2 info-item3";
+    "info-item1 info-item2 info-item3"
+    "info-item4 infor-item5 info-item6"
+    ". info-item7 .";
     grid-template-columns: 1fr 1fr 1fr;
     
         
@@ -82,7 +84,7 @@ h1{
 }
 
 
-.info-item1, .info-item2, .info-item3{
+.info-item1, .info-item2, .info-item3, .info-item4, .info-item5, .info-item6, .info-item7{
     margin: 1em;
     padding: 1em;
     background-color: #c9ada7;
@@ -90,6 +92,11 @@ h1{
     font-size: 0.8em; 
 }
 
+.info-item7{
+    grid-area:info-item7;
+    justify-self: center;
+    align-self: center;
+}
 
 
 .wrapper{
