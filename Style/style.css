@@ -81,12 +81,12 @@ nav ul li a:hover{
       
      
     }
+    
 
     .studie-info h1{
         padding-top: 0.8rem;
         
     }
-
 }
 
 .studie-info h1{ 
@@ -524,7 +524,7 @@ tbody tr:nth-child(even) {
         gap: 0.3em; /* Further reduce gap */
         height:auto;
         grid-template-areas: 
-        "forslag-1" forslag-2"
+        "forslag-1 forslag-2"
         "forslag-3 forslag-4 " 
         "forslag-5 forslag-6 "
         "forslag-7 forslag-8" ;
