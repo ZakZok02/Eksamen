@@ -87,6 +87,8 @@ nav ul li a:hover{
         padding-top: 0.8rem;
         
     }
+
+    
 }
 
 .studie-info h1{ 
@@ -441,6 +443,8 @@ tbody tr:nth-child(even) {
     padding-top: 1.5rem; /* Increased from 1rem */
     text-align: center;
 }
+
+
 
 /* Mobile size screen */
 @media (max-width: 600px) {
