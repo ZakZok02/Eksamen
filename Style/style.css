@@ -21,7 +21,9 @@ nav ul{
 nav ul li{
     margin: 1em;
     padding-right:  1em; 
-    font-size: 1.2em;
+    font-size: 0.8em;
+    color: black
+
     
    
 }
@@ -336,7 +338,12 @@ tbody tr:nth-child(even) {
         text-align: center;
         color: #fff;
     }
-    p {
+
+    p{
+        font-size: 0.8em;
+        color: black
+    }
+    .img-container  p {
         font-size: 1.2em;
     }        
     .grid {
@@ -363,7 +370,7 @@ tbody tr:nth-child(even) {
         color: #333;
     }
     article p {
-        color: #666;
+        color: black;
     }
 .footer {
     background-color: #f2e9e4;
@@ -444,10 +451,12 @@ tbody tr:nth-child(even) {
     text-align: center;
 }
 
-
+.tittler{
+    border-bottom: 0.5px solid black;
+}
 
 /* Mobile size screen */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .img-container img{
         height: auto;
         width: 50%;
@@ -540,7 +549,7 @@ tbody tr:nth-child(even) {
     /* Adjust individual suggestion boxes */
     .forslag-1, .forslag-2, .forslag-3, .forslag-4,
     .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
-        padding: 0.8em; /* Decrease padding for mobile */
+        padding: 0.9em; /* Decrease padding for mobile */
         font-size: 1.3em; /* Smaller font size on mobile */
     }
 
