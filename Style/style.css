@@ -326,7 +326,7 @@ tbody tr:nth-child(even) {
     .main_content:hover {
         transform: translateY(-5px);
     }
-    .main_content img {
+   
 
     article:hover {
         transform: translateY(-5px);
