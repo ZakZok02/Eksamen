@@ -141,6 +141,36 @@ details {
     border-radius: 0.3em;
     cursor: pointer;
 }
+.container details, 
+.container details summary {
+    color: #000;
+}
+
+.container details p,
+.container details ul,
+.container details li {
+    color: #000; 
+    font-size: 1em;
+}
+.container details details summary {
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.6em 1em;
+    color: #333;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 0.4em;
+    margin: 0.5em 0;
+}
+.container details details p {
+    margin: 0.5em 1.5em;
+    color: #333;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+
 
 .tittler{
     border-bottom: 0.5px solid black;
@@ -152,7 +182,7 @@ details {
     margin-bottom: 10px;
 }
 
-.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {
+.grid-item {
     border-radius: 0.4em;
     padding: 1.1em;
     background-color: #F4F5F7;
@@ -180,6 +210,7 @@ details {
     text-align: center;
     
 }
+
 
 .forslag-1, .forslag-2, .forslag-3, .forslag-4, .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
     padding: 1.6em;
@@ -430,7 +461,7 @@ tbody tr:nth-child(even) {
 }
 
 /* Mobile (between 480px && 600px) */
-@media ((min-width: 180px) and (max-width:600px)){
+@media ((min-width: 180px) and (max-width:479px)){
 
     main .flex-innhold {
         display: grid;
@@ -571,7 +602,7 @@ tbody tr:nth-child(even) {
 }
 
 /* tablet size screen */
-@media ((min-width:600px) and (max-width:768px) ) {
+@media ((min-width:480px) and (max-width:768px) ) {
         main .flex-innhold {
         display: grid;
         grid-template-columns: 1fr;
