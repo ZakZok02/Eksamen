@@ -220,15 +220,6 @@ details {
 }
 
 
-/* .Forslag-til-studie .forslag-2{
-        display: grid; 
-        align-items: center; 
-        grid-template-areas: 
-        "info-itemForslag";
-        grid-template-columns: 1.9fr;
-        text-align: center;
-    } */
-
 .info-itemForslag{
     padding-top: 2em;
     font-size: 3em;
