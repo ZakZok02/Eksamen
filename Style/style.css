@@ -925,4 +925,88 @@ tbody tr:nth-child(even) {
     }
 
 }
-    
+
+/* Kode for Github */
+
+
+
+.gridGIT-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+
+    margin: 0 auto;
+}
+
+/* Sections in the Grid */
+.intro, .fordeler, .utfordringer, .images {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Lists Styling */
+ul {
+    list-style: disc;
+    padding-left: 1.5em;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+.image-grid img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+
+.introgrid {    
+    display: grid;
+    height: auto;
+    grid-template-columns: 2fr 1fr 1fr; 
+    grid-template-areas: 
+        "grid-itemGIT .  ."; 
+    gap: 0.8em;
+    margin: 2em 9em;
+    text-align: center;
+    background-image: url(../images/githubhome.png);
+    position:relative;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border-radius: 3px;
+    min-height: 20em;
+}
+
+.grid-itemGIT {
+    grid-area: grid-itemGIT; 
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1em;
+    border-radius: 3px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
