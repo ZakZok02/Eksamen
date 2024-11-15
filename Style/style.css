@@ -977,6 +977,7 @@ footer {
 
 .containerGIT {
     position: relative;
+    margin-top: 0%;
     width: 100%;
     height: 40em;
     overflow: hidden;
@@ -1009,7 +1010,8 @@ footer {
 
 .screenshots-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-areas: 
+    "screenshot-item screenshot-item";
     grid-template-rows: auto;
     gap: 1em;
     margin: 0 auto;
