@@ -408,6 +408,7 @@ tbody tr:nth-child(even) {
     article p {
         color: #666;
     }
+    
 
 .footer {
     background-color: #f2e9e4;
@@ -487,7 +488,7 @@ tbody tr:nth-child(even) {
 }
 
 /* Mobile (between 480px && 600px) */
-@media ((min-width: 180px) and (max-width:479px)){
+@media ((min-width: 80px) and (max-width:479px)){
 
 
     nav ul{
@@ -505,6 +506,7 @@ tbody tr:nth-child(even) {
   header{
         background-color: #F2F4F4;
         height: 7em;
+        width: 100%;;
         padding-bottom: 1em;
     }
 
@@ -530,6 +532,7 @@ tbody tr:nth-child(even) {
         grid-template-rows: auto; /* Single column for mobile */
       
         height:auto;
+        width: auto;
         grid-template-areas: 
         "forslag-1"
         "forslag-2"
