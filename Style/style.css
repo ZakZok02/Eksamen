@@ -1009,7 +1009,7 @@ footer {
 
 .screenshots-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: auto;
     gap: 1em;
     margin: 0 auto;
@@ -1028,5 +1028,20 @@ footer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1.5em;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
+
 }
+
+.text-item h2{
+margin: 1em ;
+}
+.text-item p{
+    margin: 1em;
+    text-align: center;
+    font-size: 1.1em; 
+    line-height: 1.8; 
+    color: #333;
+    text-align: justify;
+    padding: 0.5em;
+}
+
