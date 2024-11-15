@@ -975,38 +975,58 @@ footer {
 
 
 
-.introgrid {    
-    display: grid;
-    height: auto;
-    grid-template-columns: 2fr 1fr 1fr; 
-    grid-template-areas: 
-        "grid-itemGIT .  ."; 
-    gap: 0.8em;
-    margin: 2em 9em;
+.containerGIT {
+    position: relative;
+    width: 100%;
+    height: 40em;
+    overflow: hidden;
+}
+
+.AIbilde {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.AIBildeTekstContainer {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
     text-align: center;
-    background-image: url(../images/githubhome.png);
-    position:relative;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    border-radius: 3px;
-    min-height: 20em;
-}
-
-.grid-itemGIT {
-    grid-area: grid-itemGIT; 
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 1em;
-    border-radius: 3px; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    border-radius: 8px;
+    max-width: 80%
 }
 
+.content-section {
+    padding: 2em;
+    background-color: #f8f9fa;
+}
 
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    gap: 1em;
+    margin: 0 auto;
+}
 
-
-
-
+/* Screenshot Grids */
+.screenshot-item {
+    background-color: rgba(200, 200, 255, 0.3);
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+}
+.text-item {
+    grid-column: 1 / -1; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+}
