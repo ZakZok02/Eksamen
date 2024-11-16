@@ -1,3 +1,4 @@
+
 *{
     font-family: Moderat,Avenir,Helvetica,Arial,sans-serif;
     margin:0%;
@@ -16,14 +17,16 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    justify-content: center;
+    
 }
 
-nav ul li{
-    margin: 1em;
-    padding-right:  1em; 
-    font-size: 1.2em;
-    
-   
+nav ul li {
+    font-size: 1 em;
+    font-weight: bold; 
+    padding: 0.5em;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 a{
@@ -183,23 +186,24 @@ details {
 .grid-tittler {
     text-align: center;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 2em;
 }
 
 .grid-item {
     border-radius: 0.4em;
-    padding: 1.1em;
+    padding:0;
     background-color: #F4F5F7;
     margin-bottom: 2em;
 }
 
 .studieretningforlslag {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     border-radius: 8px;
-    padding: 1.5em;
     text-align: center;
+    width: 100%;
     background-color: white;
+    padding-left: 1em;
 }
 .studieretninginfo-title {
     font-size: 1.4em;
@@ -267,10 +271,19 @@ details {
     max-width: 600px;
 }
 
+.yearsList{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
 
 .firstyear, .secondyear, .thirdyear{
     border-bottom: 1px dashed black;
     margin-top: 2em;
+    overflow-x: auto;
     
 }
 
@@ -305,6 +318,9 @@ details {
     border-collapse: collapse;
     margin-bottom: 3em;
     font-size: 1em;
+    table-layout: fixed;
+    word-wrap: break-word;
+    white-space: normal;
 }
 caption {
     font-weight: bold;
@@ -327,6 +343,11 @@ border: 2px solid #343a40;
 text-align: center;
 }
 
+tbody tr{
+    display: table-row;
+   
+}
+
 tbody tr:nth-child(odd) {
 background-color: #8ecae6
 }
@@ -341,15 +362,6 @@ tbody tr:nth-child(even) {
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
-    }
-    .hero {
-        background-image: url();
-        background-size: cover;
-        background-position: center;
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .overlay {
         background-color: #f2e9e4;
@@ -408,87 +420,172 @@ tbody tr:nth-child(even) {
     article p {
         color: #666;
     }
+
+
+
+
+
+    .Studenthistorier-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        gap: 1em;
+        align-items: center;
+        width: 63.2%;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #F2F4F4;; 
+        border-radius: 8px;
+    }
+    
+    
+    .Studenthistorier-text h2 {
+        font-size: 2em;
+        color: #000;
+        margin-bottom: 0.5em;
+    }
+    
+    .Studenthistorier-text p, a {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 1em;
+        color: #000;
+    }
+    
+    .Studenthistorier-text .button {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        padding: 0.8em 1.5em;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 1em;
+    }
+    
+    .Studenthistorier-text .button:hover {
+        background-color: #333;
+    }
+    
+    /* Image container */
+    .Studenthistorier-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover; 
+    }
     
 
-.footer {
-    background-color: #f2e9e4;
-    color: #333;
-    font-family: Arial, sans-serif;
-    padding: 1.3em;
-    line-height: 1.6;
-    margin-top: 1em;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-}
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-}
-.footer h4 {
-    color: #0056b3;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem; /* Increased from 1rem */
-}
-.footer address {
-    font-style: normal;
-    line-height: 1.8; /* Increased from 1.6 */
-    margin-bottom: 1rem; /* Added for spacing */
-}
-.footer p {
-    margin: 1.5rem 0;
-}
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-.footer li {
-    margin-bottom: 0.8rem; /* Increased from 0.5rem */
-}
-.footer a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.social-links {
-    display: flex;
-    gap: 1.2rem;
-    margin-top: 1rem; /* Added for spacing */
-  
-}
-.social-links a {
-    background-color: #0056b3;
-    border-radius: 50%;
-    color: #fff;
+    .footer {
+        background-color: #f2e9e4;
+        color: #333;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+    }
+    .footer h4 {
+        color: #0056b3;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer address {
+        font-style: normal;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+    .footer p {
+        margin: 1.5rem 0;
+    }
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer li {
+        margin-bottom: 0.8rem;
+    }
+    .footer a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer a:hover {
+        color: #0056b3;
+    }
+    .social-links {
+        display: flex;
+        gap: 1.2rem;
+        margin-top: 1rem;
+    }
+    .social-links a {
+        background-color: #0056b3;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        transition: background-color 0.3s ease;
+    }
+    .social-links a:hover {
+        background-color: red;
+    }
+    /*Kontakt oss*/
+    .footer-sectionutdannings-spørsmål {
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .person {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    transition: background-color 0.3s ease;
-}
-
-
-.social-links a:hover {
-    background-color: red;
-}
-.footer-bottom {
-    border-top: 1px solid #ddd;
-    margin-top: 2.5rem; /* Increased from 2rem */
-    padding-top: 1.5rem; /* Increased from 1rem */
-    text-align: center;
-}
-
+    }
+    .contact1-info {
+        display: flex;
+        align-items: flex-start;
+      }
+      .fagligleder-picture {
+        width: 150px;
+        height: auto;
+        border-radius: 10%;
+        margin-right: 20px;
+      } 
+      .contact1-details {
+        flex: 1;
+      }
+      .details p {
+        margin: 5px 0;
+      }
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .footer-bottom {
+        border-top: 1px solid #ddd;
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+    
 /* Mobile (between 480px && 600px) */
-@media ((min-width: 80px) and (max-width:479px)){
+@media ((min-width:150px) and (max-width:480px)){
 
 
     nav ul{
@@ -497,10 +594,12 @@ tbody tr:nth-child(even) {
     }
     
     nav ul li{
-        margin: 1.4em;
-        font-size: 1em;
-        padding: 0.1em;
+        margin: 1.5em;
+        font-size: 1.2em;
+        padding: 0.2em;
       }
+
+ 
 
     
   header{
@@ -508,6 +607,7 @@ tbody tr:nth-child(even) {
         height: 7em;
         width: 100%;;
         padding-bottom: 1em;
+    
     }
 
     main .flex-innhold {
@@ -523,8 +623,11 @@ tbody tr:nth-child(even) {
             "info-item5"
             "info-item6"
             "info-item7";
-        gap: 1em;
+            gap: 1em;
     }
+
+
+    
     /* Forslag-til-studie responsive columns */
     .Forslag-til-studie {
         
@@ -550,7 +653,6 @@ tbody tr:nth-child(even) {
        
         flex-direction:row;
         align-items: center;
-        width: 100%;
     
     }
     nav ul li{
@@ -598,8 +700,18 @@ tbody tr:nth-child(even) {
     }
 
     .studie-info h1{
-        padding-top: 0.7rem;
+        padding-top: 0.7em;
+        /* padding-right: 1em; */
+        font-size: 2.1em;
+        text-align: center;
         
+    }
+
+    .studie-info p{
+        font-size: 1.2em;
+        text-align: center;
+        margin-right: 1.2rem;
+        /* padding-right: 1.2em; */
     }
 
    
@@ -622,9 +734,15 @@ tbody tr:nth-child(even) {
 
         
     .firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table {
-        display: block; /* Display table as a block for stacking */
-        font-size: 1rem; /* Reduce font size for better fit */
+       
+        
         margin-bottom: 1.5em; /* Adjust margin for spacing */
+        padding: 0;
+        border-collapse: separate;
+        table-layout: fixed;
+        word-wrap: break-word;
+      
+        
     }
     caption {
         font-weight: bold;
@@ -635,32 +753,137 @@ tbody tr:nth-child(even) {
     }
 
     thead th {
-    background-color: #ffff;
-    color: #000;
-    padding: 0.3em;
-    border: 1.7px solid #343a40;
+ 
+         padding: 0.3em;
+        font-size: 0.7em;
+        border: 1px solid #343a40;
+   
+ 
     }
 
+   
     tbody td {
-    padding: 0.3em;
-    border: 1.7px solid #343a40;
-    text-align: center;
+    
+    padding: 0.1em;
+    font-size: 0.7em;
+    border: 1px solid #343a40;
+ 
+   
+    
+  
     }
+
+    .grid-item {
+        margin: 0 auto;
+        width: 100%; /* Full width for each grid item */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .grid-tittler {
+    
+        font-size: 1.1em;
+        margin-bottom: 2em;
+        text-align: center;
+
+        padding: 0.5em; /* Add spacing around the summary */
+       
+    }
+   
+
+    .forstudie{
+       
+        padding: 0;
+        margin: auto 0;
+        display: block;
+      
+    }
+
+    .forstudie li{
+        
+        font-size: 0.7em; /* Scale text for better fit */
+        padding: 0.2em 0; /* Adjust padding */
+        text-align: center; /* Align text for readability */
+    }
+    
+
+    .studieretningforlslag {
+       
+        padding: 0.4em;
+        border-radius: 4px;
+        margin-bottom: 1em; /* Add spacing between items */  
+      
+     
+    }
+
+    .studieretninginfo-title {
+        font-size: 1em; /* Reduce title font size */
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    
+
+    h2.studieretninginfo-title {
+        font-size: 0.9em; /* Adjust headline size */
+    }
+
+    /* Adjust the <details> container for small screens */
+    details {
+        margin: 0.4em;
+    }
+    .Studenthistorier-text h2 {
+        font-size: 1.1em;
+        margin-bottom: 0.4em;
+    }
+
+
+    .Studenthistorier-text .button {
+        
+        padding: 0.8em auto;
+        font-size: 0.6rem;
+     
+        margin-top: 1em;
+    }
+
+    .Studenthistorier-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        margin: 1.7em auto;
+        padding: 1.7em;
+      
+        border-radius: 5px;
+    }
+
+    
+   
+     
 
     
 
 }
 
-@media (max-width:836px){
+@media (max-width:1380px){
     .forstudie{
         display: block;
         justify-content: space-around;
         list-style-type: none;
     }
+        .screenshots-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1em;
+        }
+        .screenshot-item {
+            height: 15em; /* Smaller height for mobile */
+        }
 }
 
 /* tablet size screen */
-@media ((min-width:480px) and (max-width:768px) ) {
+@media ((min-width:481px) and (max-width:768px) ) {
         main .flex-innhold {
         display: grid;
         grid-template-columns: 1fr;
@@ -731,6 +954,10 @@ tbody tr:nth-child(even) {
     .studie-info h1{
         padding-top: 0.8rem;
         
+    }
+
+    .studie-info p{
+        text-align: center;
     }
 
    
@@ -926,7 +1153,48 @@ tbody tr:nth-child(even) {
 
 }
 
-/* Kode for Github */
+@media screen and (min-width: 120px) and (max-width: 1500px) {
+    .details{
+        width: 100%;
+    }
+    .Studenthistorier-image img {
+        display: none;
+    }
+    .footer{
+        width: 100%;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+
+    .Studenthistorier-wrapper {
+        background-image: url("../Style/Bilder/kontakt.jpg"); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        height: auto;
+        display: block;
+        width: auto;
+    }
+    .Studenthistorier-wrapper a{
+        color:#000;
+    }
+
+
+    .Studenthistorier-text {
+        
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 2em;
+        border-radius: 8px;
+        color: #000; 
+    }
+}
+
+
+   /* Kode for Github */
 
 
 
@@ -950,6 +1218,16 @@ ul {
     list-style: disc;
     padding-left: 1.5em;
 }
+header nav ul{
+    margin: 0;
+}
+header nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    
+}
 
 .image-grid {
     display: grid;
@@ -962,34 +1240,20 @@ ul {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 1em;
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: #555;
-}
-
-
-
 .containerGIT {
     position: relative;
-    margin-top: 0%;
     width: 100%;
     height: 40em;
     overflow: hidden;
-}
-
-.AIbilde {
+   }
+   
+   .AIbilde {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.AIBildeTekstContainer {
+   }
+   
+   .AIBildeTekstContainer {
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -1001,43 +1265,50 @@ footer {
     padding: 1em;
     border-radius: 8px;
     max-width: 80%
-}
-
-.content-section {
+   }
+   
+   .content-section {
     padding: 2em;
     background-color: #f8f9fa;
-}
-
-.screenshots-grid {
+   }
+   .screenshots-grid {
     display: grid;
-    grid-template-areas: 
-    "screenshot-item screenshot-item";
-    grid-template-rows: auto;
-    gap: 1em;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    grid-template-rows: auto; /* Dynamic row heights */
+    gap: 1em; /* Space between items */
+    margin: 0 auto; /* Center the grid */
+    padding: 1em;
 }
 
-/* Screenshot Grids */
+/* Individual Screenshot Items */
 .screenshot-item {
-    background-color: rgba(200, 200, 255, 0.3);
-    padding: 1em;
-    border-radius: 8px;
-    text-align: center;
-    height: auto;
+    background-color: rgba(200, 200, 255, 0.3); /* Optional background color for fallback */
+    height: 20em; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-.text-item {
+    
+
+   
+   .text-item {
     grid-column: 1 / -1; 
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color:#F4F5F7;
     padding: 1.5em;
     border-radius: 8px;
     text-align: left;
-
-}
-
-.text-item h2{
-margin: 1em ;
-}
-.text-item p{
+   
+   }
+   
+   .text-item h2, ul,li{
+   margin: 1em ;
+   }
+   .text-item p{
     margin: 1em;
     text-align: center;
     font-size: 1.1em; 
@@ -1045,5 +1316,15 @@ margin: 1em ;
     color: #333;
     text-align: justify;
     padding: 0.5em;
-}
+   }
+   
+ .rights{
+    text-align: center;
+    background-color:#F4F5F7;
+   }
+  
+
+    
+
+
 
