@@ -8,7 +8,6 @@
 header{
     background-color: #F2F4F4;
     height: 4em;
-    margin-bottom: 1em;
 }
 
 
@@ -17,7 +16,7 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    justify-content: center;
+    padding-right: 2em;
     
 }
 
@@ -194,6 +193,9 @@ details {
     padding:0;
     background-color: #F4F5F7;
     margin-bottom: 2em;
+}
+.grid-item a{
+    color: #000;
 }
 
 .studieretningforlslag {
@@ -444,11 +446,10 @@ tbody tr:nth-child(even) {
         margin-bottom: 0.5em;
     }
     
-    .Studenthistorier-text p, a {
+    .Studenthistorier-text {
         font-size: 1.1em;
         line-height: 1.6;
         margin-bottom: 1em;
-        color: #000;
     }
     
     .Studenthistorier-text .button {
@@ -1310,12 +1311,10 @@ header nav ul li a{
    }
    .text-item p{
     margin: 1em;
-    text-align: center;
+    text-align: left;
     font-size: 1.1em; 
     line-height: 1.8; 
     color: #333;
-    text-align: justify;
-    padding: 0.5em;
    }
    
  .rights{
