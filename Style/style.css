@@ -739,7 +739,6 @@ tbody tr:nth-child(even) {
         
         margin-bottom: 1.5em; /* Adjust margin for spacing */
         padding: 0;
-        border-collapse: separate;
         table-layout: fixed;
         word-wrap: break-word;
       
@@ -1281,19 +1280,29 @@ header nav ul li a{
     padding: 1em;
 }
 
-/* Individual Screenshot Items */
+
 .screenshot-item {
-    background-color: rgba(200, 200, 255, 0.3); /* Optional background color for fallback */
-    height: 20em; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    background-size: cover; 
-    background-position: center; 
+    background-color: rgba(200, 200, 255, 0.3);
+    padding: 1em;
     border-radius: 5px; 
+    height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    text-align: center;
 }
+
+.screenshot-item h4{
+    padding-bottom: 1em;
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    object-fit: contain; 
+    border-radius: 5px;
+}
+
+
     
 
    
