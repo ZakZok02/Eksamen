@@ -563,6 +563,7 @@ tbody tr:nth-child(even) {
     
     .social-links a:hover {
         background-color: red;
+        text-decoration: none;
     }
     
     /* Kontakt oss */
