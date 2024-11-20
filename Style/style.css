@@ -150,6 +150,7 @@ details {
 .container details, 
 .container details summary {
     color: #000;
+
 }
 
 .container details p,
@@ -205,7 +206,6 @@ details {
     text-align: center;
     width: 100%;
     background-color: white;
-    padding-left: 1em;
 }
 .studieretninginfo-title {
     font-size: 1.4em;
@@ -246,7 +246,9 @@ details {
 
 .forslagwrapper h2{
     margin: 2em auto;
+
     text-align: center;
+
     
 }
 
@@ -413,7 +415,7 @@ tbody tr:nth-child(even) {
     
 
     article section {
-        padding: 20px;
+        padding: 1.2em 0 1.2em 0;
     }
     article h2 {
         margin-top: 0;
@@ -476,6 +478,7 @@ tbody tr:nth-child(even) {
     }
     
 
+    FOOTER CSS
     .footer {
         background-color: #f2e9e4;
         color: #333;
@@ -483,54 +486,67 @@ tbody tr:nth-child(even) {
         padding: 20px;
         line-height: 1.6;
     }
+    
     .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 1rem;
     }
+    
     .footer-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 2rem;
     }
+    
     .footer-section {
         flex: 1;
         min-width: 200px;
     }
+    
     .footer h4 {
         color: #0056b3;
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
     }
+    
     .footer address {
         font-style: normal;
         line-height: 1.8;
         margin-bottom: 1rem;
     }
+    
     .footer p {
         margin: 1.5rem 0;
     }
+    
     .footer ul {
         list-style: none;
         padding: 0;
     }
+    
     .footer li {
         margin-bottom: 0.8rem;
     }
+    
     .footer a {
         color: #333;
         text-decoration: none;
         transition: color 0.3s ease;
     }
+    
     .footer a:hover {
         color: #0056b3;
     }
+    
     .social-links {
         display: flex;
         gap: 1.2rem;
         margin-top: 1rem;
+        flex-wrap: wrap; /* Gjør ikonene responsive for å unngå overlapping */
     }
+    
     .social-links a {
         background-color: #0056b3;
         border-radius: 50%;
@@ -541,49 +557,94 @@ tbody tr:nth-child(even) {
         height: 40px;
         width: 40px;
         transition: background-color 0.3s ease;
+        position: relative;
+        z-index: 1; /* Sørger for at ikonene ikke overlapper andre elementer */
     }
+    
     .social-links a:hover {
         background-color: red;
     }
-    /*Kontakt oss*/
+    
+    /* Kontakt oss */
     .footer-sectionutdannings-spørsmål {
         margin-top: 30px;
         display: flex;
         align-items: flex-start;
     }
+    
     .person {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
+    
     .contact1-info {
         display: flex;
-        align-items: flex-start;
-      }
-      .fagligleder-picture {
+        align-items: center; /* Justerer innholdet vertikalt */
+        gap: 1em; /* Legger til avstand mellom bilde og tekst */
+    }
+    
+    .fagligleder-picture {
         width: 150px;
         height: auto;
-        border-radius: 10%;
-        margin-right: 20px;
-      } 
-      .contact1-details {
-        flex: 1;
-      }
-      .details p {
+        margin-right: 0; 
+        border-radius: 6%;
+        flex-shrink: 0; 
+    }
+    
+    .contact1-details {
+        flex: 1; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+    }
+    
+    .contact1-details p {
+        margin: 0.5em 0; 
+        font-size: 1em; 
+        line-height: 1.4; 
+    }
+    
+    .contact1-details a {
+        color: #007BFF; 
+        text-decoration: none; 
+        font-weight: bold; 
+    }
+    
+    .contact1-details a:hover {
+        text-decoration: underline; 
+        color: #0056b3; 
+    }
+    
+    .details p {
         margin: 5px 0;
-      }
+    }
+    
     a {
         color: #007BFF;
         text-decoration: none;
     }
+    
     a:hover {
         text-decoration: underline;
     }
+    
     .footer-bottom {
         border-top: 1px solid #ddd;
         margin-top: 2.5rem;
         padding-top: 1.5rem;
         text-align: center;
     }
+    
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+    
+    .social-links a {
+        margin-right: 0.5rem;
+    }
+    
+    
     
 /* Mobile (between 480px && 600px) */
 @media ((min-width:150px) and (max-width:480px)){
@@ -592,6 +653,7 @@ tbody tr:nth-child(even) {
     nav ul{
         display: grid;
         grid-template-columns: 1.2fr;
+        
     }
     
     nav ul li{
@@ -788,7 +850,7 @@ tbody tr:nth-child(even) {
         margin-bottom: 2em;
         text-align: center;
 
-        padding: 0.5em; /* Add spacing around the summary */
+        padding: 0.5em; 
        
     }
    
@@ -827,7 +889,7 @@ tbody tr:nth-child(even) {
     
 
     h2.studieretninginfo-title {
-        font-size: 0.9em; /* Adjust headline size */
+        font-size: 0.9em;
     }
 
     /* Adjust the <details> container for small screens */
@@ -854,7 +916,7 @@ tbody tr:nth-child(even) {
         align-items: center;
       
         margin: 1.7em auto;
-        padding: 1.7em;
+        padding: 2%;
       
         border-radius: 5px;
     }
@@ -880,6 +942,8 @@ tbody tr:nth-child(even) {
         .screenshot-item {
             height: 15em; /* Smaller height for mobile */
         }
+
+
 }
 
 /* tablet size screen */
@@ -1217,6 +1281,7 @@ tbody tr:nth-child(even) {
 ul {
     list-style: disc;
     padding-left: 1.5em;
+    justify-content: space-around;
 }
 header nav ul{
     margin: 0;
@@ -1226,6 +1291,7 @@ header nav ul li a{
         color: black;
         font-weight: bold;
         text-align: center;
+        padding: 2em;
     
 }
 
@@ -1315,9 +1381,6 @@ header nav ul li a{
    
    }
    
-   .text-item h2, ul,li{
-   margin: 1em ;
-   }
    .text-item p{
     margin: 1em;
     text-align: left;
