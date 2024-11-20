@@ -1293,6 +1293,10 @@ header nav ul li a{
     border-radius: 8px;
     max-width: 80%
    }
+
+   .AIBildeTekstContainer p {
+    color: white;
+   }
    
    .content-section {
     padding: 2em;
