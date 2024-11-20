@@ -230,46 +230,6 @@ details {
 
 
 
-.Forslag-til-studie{
-    display: grid;
-    height: auto;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "forslag-1  forslag-2  forslag-3  forslag-4 " 
-    "forslag-5  forslag-6  forslag-7  forslag-8" ;
-    gap: 0.8em;
-    margin: 2em 9em;
-    text-align: center;
-   
-}
-
-.forslagwrapper h2{
-    margin: 2em auto;
-
-    text-align: center;
-
-    
-}
-
-
-.forslag-1, .forslag-2, .forslag-3, .forslag-4, .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
-    padding: 1.6em;
-    border-radius: 0.3em;
-    background-color: #F4F5F7;;
-    font-size: 1.4em;
-}
-
-
-.info-itemForslag{
-    padding-top: 2em;
-    font-size: 3em;
-    margin: 0.1em;
-    background-color: #F4F5F7;
-    border-radius: 0.2em;
-    font-size: 0.6em;
-}
-
 .studie-info p{
     min-width: 300px;   
     max-width: 600px;
