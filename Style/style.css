@@ -1177,7 +1177,7 @@ tbody tr:nth-child(even) {
 
 }
 
-@media screen and (min-width: 120px) and (max-width: 1500px) {
+@media screen and (min-width: 120px) and (max-width: 1300px) {
     .details{
         width: 100%;
     }
