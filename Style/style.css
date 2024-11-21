@@ -23,8 +23,9 @@ nav ul{
 nav ul li {
     font-size: 1 em;
     font-weight: bold; 
-    padding: 1.4em;
+    padding-top: 1em;
     border-radius: 5px; 
+    margin-right: 3em;
     transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
@@ -935,8 +936,6 @@ tbody tr:nth-child(even) {
     nav ul li{
         width: 100%;
         text-align: center;
-        padding: 0.1em 0;
-        margin: 1.2em auto; /* Reduce margin to prevent overflow */
     }
     nav ul li a{
         display: block;
@@ -1087,7 +1086,6 @@ tbody tr:nth-child(even) {
     nav ul li{
         width: 100%;
         text-align: center;
-        margin: 1.2em; /* Reduce margin to prevent overflow */
     }
     nav ul li a{
         display: block;
