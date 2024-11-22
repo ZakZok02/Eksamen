@@ -512,7 +512,7 @@ tbody tr:nth-child(even) {
     .social-links a {
         background-color: #0056b3;
         border-radius: 50%;
-        color: #fff;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1369,6 +1369,93 @@ header nav ul li a{
 }
 
 /*body*/
+
+
+/* Wrapper-Activity Styling */
+.wrapper-activity {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Style/Bilder/fjord-landsby.jpg"); /* Endre til ditt gress-bilde */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+     border-radius: 8px;
+}
+
+
+.wrapper-activity::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4); /* Gir en mørkere overlay-effekt */
+    z-index: 1;
+}
+
+/* Hero Title Styling */
+.hero {
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.title-activity {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Activity Card Styling */
+.activity-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent hvit boks */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 90%;
+}
+
+.subheading-activity {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Info List Styling */
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.info-list .icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #007BFF; /* Valgfri farge for ikonene */
+}
+
+.season {
+    font-weight: bold;
+}
+
+
+.content
 .activity-body {
     font-size: 1em;
     line-height: 1.6;
@@ -1379,7 +1466,6 @@ header nav ul li a{
 .hero .title-activity {
     font-size: 2em;
     text-align: center;
-    background-color: #000;
 }
 /*Om turen*/
 .activity-card {
@@ -1509,6 +1595,8 @@ figcaption {
 .card {
     flex: 1;
     background-color: var(--teriary-color);
+    justify-content: center;
+    text-align: center;
     border-radius: 8px;
     padding: 1.25em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1527,12 +1615,15 @@ figcaption {
 }
 .button {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--teriary-color);
-    padding: 0.625em 1.25em;
+    background-color: #000;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: auto;
+    text-align: center;
+    
 }
 .sidebar {
     width: 15.625em;
@@ -1577,13 +1668,12 @@ figcaption {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 0.625em;
+    gap: 0.25em;
 }
 .social-links li {
     display: inline;
 }
-.social-links a {
-    color: var(--quanernay-color);
+.social-links a {   
     transition: color 0.3s;
 }
 .social-links a:hover {
@@ -1671,6 +1761,17 @@ figcaption {
     }
     .card {
         flex-basis: calc(33.33% - 13.33px);
+    }
+    .button {
+        display: block;
+        background-color: #000;
+        color: #fff;
+        padding: 0.8em 1.5em;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 1em;
+        text-align: center;
     }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
