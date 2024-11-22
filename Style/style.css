@@ -1625,12 +1625,6 @@ figcaption {
     text-align: center;
     
 }
-.sidebar {
-    width: 15.625em;
-}
-.sidebar nav ul, .about ul {
-    list-style-type: none;
-}
 .sidebar nav ul li a, .about ul li a {
     color: var(--quanernay-color);
     text-decoration: none;
