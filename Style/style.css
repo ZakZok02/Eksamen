@@ -1372,7 +1372,7 @@ header nav ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../Style/Bilder/fjord-landsby.jpg"); /* Endre til ditt gress-bilde */
+    background-image: url("../Style/Bilder/fjord-landsby.webp"); /* Endre til ditt gress-bilde */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
