@@ -16,7 +16,6 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    padding-right: 2em;
     
 }
 
@@ -254,8 +253,7 @@ details {
 
 
  h3{
-    margin: 2em auto;
-    background-color: #f5f3f4;
+    margin: 1em auto;
     padding: 0.5em 0.5em 0.5em 1em;
 }
 
@@ -1237,11 +1235,6 @@ tbody tr:nth-child(even) {
 }
 
 /* Lists Styling */
-ul {
-    list-style: disc;
-    padding-left: 1.5em;
-    justify-content: space-around;
-}
 header nav ul{
     margin: 0;
 }
@@ -1385,7 +1378,6 @@ header nav ul li a{
     background-position: center;
     overflow: hidden;
     position: relative;
-     border-radius: 8px;
 }
 
 
@@ -1423,7 +1415,7 @@ header nav ul li a{
     width: 90%;
 }
 
-.subheading-activity {
+.-heading-activity {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 1rem;
@@ -1501,47 +1493,37 @@ header nav ul li a{
 .icon {
     margin-right: 0.5em;
 }
-.weather-container {
-    display: flex;
-    max-width: 37.5em;
-    margin: 0 auto;
-    background-color: var(--teriary-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "big big "
+        "right-top small-1";
+    gap: 0.313em;
+    text-align: center;
+    justify-items: center;
+    padding: 1em 2em 1em 2em;
 }
-.activity-tabell {
-    width: 100%;
-    border-collapse: collapse;
+
+.activity-griditem{
+    background-color: #F4F5F7;
+    color: black;
+    border-radius: 0.5em;
+    padding: 0.85rem;
 }
-.activity-tabell th, td {
-    padding: 0.75em;
-    text-align: left;
-    border-bottom: 1px solid var(--secondary-color);
+.activity-griditem:nth-child(1) {
+    grid-area: big;
 }
-.weather-icon {
-    width: 1.875em;
-    vertical-align: middle;
+.activity-griditem:nth-child(2) {
+    grid-area: right-top;
 }
-.temp {
-    color: var(--quanernay-color);
-    font-weight: bold;
+.activity-griditem:nth-child(3) {
+    grid-area: small-1;
 }
-.precipitation {
-    color: var(--quanernay-color);
+.activity-griditem:nth-child(4) {
+    grid-area: small-2;
 }
-.wind {
-    color: var(--quanernay-color);
-    font-size: 0.875em;
-}
-.aside {
-    flex: 2;
-    margin-right: 0.625em;
-}
-.vær-publisert, .vær-lenker {
-    border: 1px solid var(--secondary-color); 
-    padding: 0.625em; 
-    margin-bottom: 0.625em;
-}
+
 /*gallery and images*/
 .gallery {
     display: grid;
@@ -1691,9 +1673,6 @@ figcaption {
     text-decoration: underline;
 }
 @media (max-width: 480px) {
-    .activity-body {
-        font-size: 0.875em;
-    }
     .gallery {
         grid-template-columns: 1fr;
     }
@@ -1775,12 +1754,6 @@ figcaption {
     .gallery {
         grid-template-columns: repeat(4, 1fr);
     }
-}
-@media (min-width: 1441px) {
-    .activity-body {
-        font-size: 1.125em;
-    }
-   
 }
 
 @media (min-width: 100px) and (max-width: 535px){
