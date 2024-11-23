@@ -692,12 +692,13 @@ header nav ul li a {
     width: 100%; /* Bildene fyller bredden av hver grid-celle. */
     border: 1px solid #ddd; /* Legger til en tynn, lys grå kantlinje rundt bildene. */
     border-radius: 5px; /* Avrunder kantene på bildene med en radius på 5px. */
+    object-fit: cover;
 }
 
 .containerGIT {
     position: relative; /* Gjør det mulig å plassere absolutte elementer inni denne containeren. */
     width: 100%; /* Gjør containeren 100% bredde av dens overordnede element. */
-    height: 40em; /* Setter en fast høyde på 40em for containeren. */
+    height: auto; /* Setter en fast høyde på 40em for containeren. */
     overflow: hidden; /* Skjuler innhold som går utenfor containerens grenser. */
 }
 
