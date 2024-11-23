@@ -700,7 +700,7 @@ tbody tr:nth-child(even) {
         height: auto;
         width:100%;
         align-items: center;
-        background-image:url("Bilder/studenter.jpg");
+        background-image:url("Bilder/studenter.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1101,7 +1101,7 @@ tbody tr:nth-child(even) {
         height: auto;
         width:100%;
         align-items: center;
-        background-image:url("Bilder/studenter.jpg");
+        background-image:url("Bilder/studenter.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1191,7 +1191,7 @@ tbody tr:nth-child(even) {
     }
 
     .Studenthistorier-wrapper {
-        background-image: url("Bilder/kontakt.jpg"); /* Replace with your image URL */
+        background-image: url("Bilder/kontakt.webp"); /* Replace with your image URL */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
