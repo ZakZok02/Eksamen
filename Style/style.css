@@ -1,998 +1,1048 @@
 
+/* Global stilinnstillinger */
 *{
-    font-family: Moderat,Avenir,Helvetica,Arial,sans-serif;
-    margin:0%;
-    padding: 0%;
+    font-family: Moderat,Avenir,Helvetica,Arial,sans-serif; /* Definerer font-stil for hele siden */
+    margin: 0%; /* Fjerner standard margin */
+    padding: 0%; /* Fjerner standard padding */
+   
 
 }
-header{
-    background-color: #F2F4F4;
-    height: 4em;
+/* Header-styling */
+header {
+    background-color: #F2F4F4; /* Setter en lys bakgrunnsfarge */
+    height: 4em; /* Definerer høyden til headeren */
 }
 
+/* H1 OVERSKRIFTER */
 
-
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
+h1 {
+    font-size: 2.5em; /* Skriftstørrelse for overskrifter */
+    text-align: center; /* Sentrer overskrifter */
+    color: #fff; /* Farge på overskriften */
+}
     
+
+/* H3 OVERSKRIFTER */
+h3 {
+    margin: 2em auto; /* Avstand over og under samt sentrering */
+    background-color: #f5f3f4; /* Lys bakgrunnsfarge */
+    padding: 0.5em 0.5em 0.5em 1em; /* Innvendig avstand med fokus på venstre */
+}
+
+p {
+    font-size: 1.2em; /* Skriftstørrelse for avsnitt */
+    color: #000; /* Tekstfarge */
+}
+
+
+
+
+/* Navigasjonsmeny */
+nav ul {
+    display: flex; /* Plasserer elementene horisontalt */
+    justify-content: flex-end; /* Flytter elementene til høyre */
+    list-style-type: none; /* Fjerner standard punktliste-stil */
+    padding-right: 2em; /* Avstand fra høyre kant */
 }
 
 nav ul li {
-    font-size: 1 em;
-    font-weight: bold; 
-    padding-top: 1em;
-    border-radius: 5px; 
-    margin-right: 3em;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    font-size: 1em; /* Størrelsen på teksten */
+    font-weight: bold; /* Gjør teksten fet */
+    padding-top: 1em; /* Avstand over teksten */
+    border-radius: 5px; /* Runde kanter */
+    margin-right: 3em; /* Avstand mellom elementene */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Gir jevn overgang ved hover */
 }
 
-a{
-    text-decoration: none;
-    color:inherit;
+/* Lenker */
+a {
+    text-decoration: none; /* Fjerner understreking */
+    color: inherit; /* Arver fargen fra parent */
 }   
 
-nav ul li a:hover{
-    color: #8B4513;
-    transition: 2s;
-   
+
+nav ul li a:hover {
+    color: #8B4513; /* Endrer farge ved hover */
+    transition: 2s; /* Lang overgangstid for fargeendring */
 }
 
 
-.img-container{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+/* Bildecontainer */
+.img-container {
+    display: flex; /* Fleksibel layout for å sentrere innhold */
+    width: 100%; /* Full bredde */
+    align-items: center; /* Vertikal sentrering */
+    background-size: cover; /* Bildet fyller hele containeren */
+    background-repeat: no-repeat; /* Ingen gjentakelse av bildet */
+    background-position: center; /* Sentrer bildet */
 }
 
 h1{ 
-    font-size: 2rem;
+    font-size: 2rem; /* øker overskrift størrelsen */
    
 }
 
-.img-container img{
-    padding-left: 8.3em;
-    width: 50%;
-    height: auto;
-
+.img-container img {
+    padding-left: 8.3em; /* Avstand til venstre */
+    width: 50%; /* Bredde på bildet */
+    height: auto; /* Automatisk høyde */
 }
 
+/* Studieinformasjon-seksjon */
 .studie-info {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8); /* Gjennomsiktig hvit bakgrunn */
+    width: 100%; /* Full bredde */
+    padding: 2em; /* Innvendig avstand */
 }
 
-.studie-info h1{
-    color:#000
+.studie-info h1 {
+    color: #000; /* Svart tekst */
 }
 
 
 
 
-.flex-innhold{
-    display: grid; 
-    align-items: center; 
-    margin-top: 1em;
-    text-align: center;
+
+/* Flex-grid layout for innhold */
+.flex-innhold {
+    display: grid; /* Bruker CSS-grid for layout */
+    align-items: center; /* Vertikal sentrering */
+    margin-top: 1em; /* Avstand til toppen */
+    text-align: center; /* Sentrerer tekst */
     grid-template-areas: 
-    "info-item1 info-item2 info-item3"
-
-    "info-item4 info-item5 info-item6" 
-
-    ". info-item7 .";
-    grid-template-columns: 1fr 1fr 1fr;
-    
-        
-    
-
+        "info-item1 info-item2 info-item3"
+        "info-item4 info-item5 info-item6"
+        ". info-item7 ."; /* Definerer grid-struktur */
+    grid-template-columns: 1fr 1fr 1fr; /* Tre like brede kolonner */
 }
 
 
 
-.info-item1, .info-item2, .info-item3,.info-item4, .info-item5, .info-item6, .info-item7{
-
-    margin: 1em;
-    padding: 1em;
-    background-color: #f2e9e4;
-    border-radius: 0.3em;
-    font-size: 0.8em; 
-}
-
-.info-item7{
-    grid-area:info-item7;
-    justify-self: center;
-    align-self: center;
+/* Individuelle grid-elementer */
+.info-item1, .info-item2, .info-item3, .info-item4, .info-item5, .info-item6, .info-item7 {
+    margin: 1em; /* Avstand utenfor elementene */
+    padding: 1em; /* Innvendig avstand */
+    background-color: #f2e9e4; /* Lys bakgrunnsfarge */
+    border-radius: 0.3em; /* Runde kanter */
+    font-size: 0.8em; /* Justerer tekststørrelse */
 }
 
 
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-    justify-content: center;
-}
-
-.wrapper h2{
-    margin-bottom: 2em;
-    text-decoration: none;
-
+/* Spesifikk styling for info-item7 */
+.info-item7 {
+    grid-area: info-item7; /* Posisjon i grid-strukturen */
+    justify-self: center; /* Sentrerer horisontalt */
+    align-self: center; /* Sentrerer vertikalt */
 }
 
 
 
-.container{
-        
-    display: grid;
-    width: 85%;
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-    gap: 0.5em;
-    padding-bottom: 1em;
+/* Wrapper for midtre layout */
+.wrapper {
+    display: flex; /* Fleksibel layout */
+    flex-direction: column; /* Plasserer elementene vertikalt */
+    align-items: center; /* Sentrerer elementene horisontalt */
+    padding-top: 60px; /* Avstand til toppen */
+    justify-content: center; /* Sentrer elementene vertikalt */
 }
 
+.wrapper h2 {
+    margin-bottom: 2em; /* Avstand under teksten */
+    text-decoration: none; /* Ingen understreking */
+}
+
+/* Grid container for hovedlayout */
+.container {
+    display: grid; /* Bruker grid layout */
+    width: 85%; /* Bredde på containeren */
+    grid-template-columns: 1fr; /* En kolonne */
+    grid-auto-rows: min-content; /* Automatisk høyde basert på innhold */
+    gap: 0.5em; /* Avstand mellom rader og kolonner */
+    padding-bottom: 1em; /* Innvendig avstand nederst */
+}
+
+/* Details-seksjon */
 details {
-    background-color: #F4F5F7;
-    padding: 1.5em;
-    border-radius: 0.3em;
-    cursor: pointer;
+    background-color: #F4F5F7; /* Lys bakgrunnsfarge */
+    padding: 1.5em; /* Innvendig avstand */
+    border-radius: 0.3em; /* Runde kanter */
+    cursor: pointer; /* Viser at elementet er klikkbart */
 }
 
 .hvalærerdu{
-    text-align: center;
+    text-align: center; /* senterer tekst*/
 }
 .container details, 
 .container details summary {
-    color: #000;
+    color: #000; /* svart tekst */
 
 }
 
+/* GENERELLE STILINNSTILLINGER FOR TEKST INNENFOR <details> TAGGEN */
 .container details p,
 .container details ul,
 .container details li {
-    color: #000; 
-    font-size: 1em;
+    color: #000; /* Sort tekstfarge */
+    font-size: 1em; /* Standard skriftstørrelse */
 }
+/* STIL FOR <summary> INNENFOR <details> */
 .container details details summary {
-    font-size: 1.1em;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0.6em 1em;
-    color: #333;
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    border-radius: 0.4em;
-    margin: 0.5em 0;
+    font-size: 1.1em; /* Litt større skriftstørrelse for overskrifter */
+    font-weight: bold; /* Fet skrift */
+    cursor: pointer; /* Endrer musepekeren til pekefinger når brukeren holder over */
+    padding: 0.6em 1em; /* Innvendig avstand: topp/bunn 0.6em, venstre/høyre 1em */
+    color: #333; /* Mørk grå tekstfarge */
+    background-color: #f2f2f2; /* Lys grå bakgrunnsfarge */
+    border: 1px solid #ddd; /* Tynn, lys grå kantlinje */
+    border-radius: 0.4em; /* Runde hjørner */
+    margin: 0.5em 0; /* Avstand over og under */
 }
+
+
+/* STIL FOR AVSNITT INNENFOR <details> */
 .container details details p {
-    margin: 0.5em 1.5em;
-    color: #333;
-    font-size: 0.95em;
-    line-height: 1.6;
+    margin: 0.5em 1.5em; /* Innvendig margin: topp/bunn 0.5em, venstre/høyre 1.5em */
+    color: #333; /* Mørk grå tekstfarge */
+    font-size: 0.95em; /* Litt mindre tekststørrelse */
+    line-height: 1.6; /* God linjeavstand for lesbarhet */
 }
 
 
 
-.tittler{
-    border-bottom: 0.5px solid black;
+
+/* UNDERSTREKING FOR OVERSKRIFTER */
+.tittler {
+    border-bottom: 0.5px solid black; /* Tynn svart linje under */
 }
 
+/* GRID-OVERSKRIFT */
 .grid-tittler {
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 2em;
+    text-align: center; /* Sentrer teksten */
+    font-size: 1.2em; /* Moderat skriftstørrelse */
+    margin-bottom: 2em; /* Avstand under overskriften */
 }
 
+/* GRID-ELEMENTER */
 .grid-item {
-    border-radius: 0.4em;
-    padding:0;
-    background-color: #F4F5F7;
-    margin-bottom: 2em;
-}
-.grid-item a{
-    color: #000;
+    border-radius: 0.4em; /* Runde hjørner */
+    padding: 0; /* Ingen innvendig avstand */
+    background-color: #F4F5F7; /* Lys bakgrunnsfarge */
+    margin-bottom: 2em; /* Avstand under hvert grid-element */
 }
 
+.grid-item a {
+    color: #000; /* Sort farge for lenker */
+}
+
+
+/* GRID FOR STUDIERETNINGER */
 .studieretningforlslag {
-    display: grid;
-    grid-template-columns: auto;
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    background-color: white;
+    display: grid; /* Bruker grid-layout */
+    grid-template-columns: auto; /* Enkeltspalte layout */
+    border-radius: 8px; /* Runde hjørner */
+    text-align: center; /* Sentraliser tekst */
+    width: 100%; /* Full bredde */
+    background-color: white; /* Hvit bakgrunn */
 }
+
+
+/* TITTEL FOR STUDIERETNING */
 .studieretninginfo-title {
-    font-size: 1.4em;
-    color: #333;
-    text-align: center;
-}
-.forstudie{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+    font-size: 1.4em; /* Stor skriftstørrelse */
+    color: #333; /* Mørk grå tekst */
+    text-align: center; /* Sentraliser tekst */
 }
 
-.forstudie li{
-    margin: 1em;
-    padding: 1em;
-    background-color: #f2e9e4;
-    border-radius: 0.3em;
-    font-size: 0.8em; 
+
+/* FORSKJELLIGE STUDIEVALG */
+.forstudie {
+    display: flex; /* Bruker fleksibel layout */
+    justify-content: space-around; /* Fordeler elementer jevnt horisontalt */
+    list-style-type: none; /* Ingen punktmerking på listen */
 }
 
 
 
-
-
-.studie-info p{
-    min-width: 300px;   
-    max-width: 600px;
-}
-
-.yearsList{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-   
-}
-
-.firstyear, .secondyear, .thirdyear{
-    border-bottom: 1px dashed black;
-    margin-top: 2em;
-    overflow-x: auto;
-    
+.forstudie li {
+    margin: 1em; /* Avstand rundt hvert listeelement */
+    padding: 1em; /* Innvendig avstand i hver boks */
+    background-color: #f2e9e4; /* Lys beige bakgrunn */
+    border-radius: 0.3em; /* Runde hjørner */
+    font-size: 0.8em; /* Litt mindre skriftstørrelse */
 }
 
 
- h3{
-    margin: 1em auto;
-    padding: 0.5em 0.5em 0.5em 1em;
-}
-
-.semester_title h4{
-    
-    border-bottom: 1px solid #343a40;
-    margin-bottom: 2.2em;
-  
-}
-
-.valg ul{
-    margin-bottom: 3em;
-    margin-left: 2em;
-}
-.valg ul li{
-    margin-bottom: 1em;
-    font-weight: bold;
+/* MINIMUM OG MAKSIMUM BREDDE FOR TEKST I STUDIEINFO */
+.studie-info p {
+    min-width: 300px; /* Minimum bredde */
+    max-width: 600px; /* Maksimum bredde */
 }
 
 
 
-.firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table{
-
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 3em;
-    font-size: 1em;
-    table-layout: fixed;
-    word-wrap: break-word;
-    white-space: normal;
-}
-caption {
-    font-weight: bold;
-    font-size: 1em;
-    margin-bottom: 2em;
-    text-align: left;
-    
+/* STIL FOR LISTE OVER ÅR */
+.yearsList {
+    display: block; /* Vises som blokk */
+    margin-block-start: 1em; /* Avstand over listen */
+    margin-block-end: 1em; /* Avstand under listen */
+    margin-inline-start: 0px; /* Ingen innrykk til venstre */
+    margin-inline-end: 0px; /* Ingen innrykk til høyre */
 }
 
+
+/* STIL FOR FORSKJELLIGE ÅR I PROGRAMMET */
+.firstyear, .secondyear, .thirdyear {
+    border-bottom: 1px dashed black; /* Stiplet linje under hvert år */
+    margin-top: 2em; /* Avstand over */
+    overflow-x: auto; /* Mulighet for horisontal rulling ved behov */
+}
+
+
+
+
+/* SEMESTEROVERSKRIFTER */
+.semester_title h4 {
+    border-bottom: 1px solid #343a40; /* Solid grå linje under */
+    margin-bottom: 2.2em; /* Avstand under */
+}
+
+/* VALG-SEKSJONER */
+.valg ul {
+    margin-bottom: 3em; /* Avstand under listen */
+    margin-left: 2em; /* Innrykk til venstre */
+}
+
+.valg ul li {
+    margin-bottom: 1em; /* Avstand mellom listeelementer */
+    font-weight: bold; /* Fet tekst for listeelementer */
+}
+
+
+/* Tabellstil */
+.firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table {
+    width: 100%; /* Full bredde */
+    border-collapse: collapse; /* Fjerner mellomrom mellom celler */
+    margin-bottom: 3em; /* Avstand under tabellen */
+    font-size: 1em; /* Tekststørrelse */
+    table-layout: fixed; /* Fikser tabelloppsett */
+    word-wrap: break-word; /* Bryter ord for å unngå overløp */
+}
+
+/* Andre spesifikke seksjoner */
+.caption {
+    font-weight: bold; /* Fet skrift for overskrifter */
+    font-size: 1em; /* Tekststørrelse */
+    margin-bottom: 2em; /* Avstand under teksten */
+    text-align: left; /* Venstrejustert tekst */
+}
+
+/* STIL FOR TABELL */
 thead th {
-background-color: #ffff;
-color: #000;
-padding: 0.5em;
-border: 2px solid #343a40;
+    background-color: #ffff; /* Bakgrunnsfarge for overskrifter i tabellen */
+    color: #000; /* Tekstfarge */
+    padding: 0.5em; /* Innvendig avstand */
+    border: 2px solid #343a40; /* Kantlinje rundt overskrifter */
 }
 
 tbody td {
-padding: 0.5em;
-border: 2px solid #343a40;
-text-align: center;
+    padding: 0.5em; /* Innvendig avstand for tabellceller */
+    border: 2px solid #343a40; /* Kantlinje rundt cellene */
+    text-align: center; /* Sentrer teksten i cellene */
 }
 
-tbody tr{
-    display: table-row;
-   
+
+tbody tr {
+    display: table-row; /* Sikrer riktig visning av rader */
 }
+
+
 
 tbody tr:nth-child(odd) {
-background-color: #8ecae6
+    background-color: #8ecae6; /* Bakgrunnsfarge for oddetallsrader */
 }
 
+
 tbody tr:nth-child(even) {
-    background-color: #ced4da;
-    }
-
-
-    .main {
-
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .overlay {
-        background-color: #f2e9e4;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2.5em;
-        text-align: center;
-        color: #fff;
-    }
-    p {
-        font-size: 1.2em;
-        color: #000;
-    }        
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
-
-    .main_content {
-
-        background-color: #f2e9e4;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    article img {
-
-        width: 100%;
-        height: 200;
-        object-fit: cover;
-    }
-
-    .main_content section {
-        padding: 20px;
-    }
-    .main_content h2 {
-        margin-top: 0;
-        color: #333;
-    }
-    .main_content p {
-        color: #666;
-    }
-    
-
-    article section {
-        padding: 1.2em 0 1.2em 0;
-    }
-    article h2 {
-        margin-top: 0;
-        color: #333;
-    }
-    article p {
-        color: #666;
-    }
+    background-color: #ced4da; /* Bakgrunnsfarge for partallsrader */
+}
 
 
 
+/* HOVEDINNHOLD OG OVERLAY */
+.main {
+    max-width: 1200px; /* Maksimal bredde for hovedinnhold */
+    margin: 0 auto; /* Sentrer innholdet horisontalt */
+    padding: 20px; /* Innvendig avstand rundt innholdet */
+}
 
 
-    .Studenthistorier-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-        gap: 1em;
-        align-items: center;
-        width: 63.2%;
-        margin: 2em auto;
-        padding: 2em;
-        background-color: #F2F4F4;; 
-        border-radius: 8px;
-    }
-    
-    
-    .Studenthistorier-text h2 {
-        font-size: 2em;
-        color: #000;
-        margin-bottom: 0.5em;
-    }
-    
-    .Studenthistorier-text {
-        font-size: 1.1em;
-        line-height: 1.6;
-        margin-bottom: 1em;
-    }
-    
-    .Studenthistorier-text .button {
-        display: inline-block;
-        background-color: #000;
-        color: #fff;
-        padding: 0.8em 1.5em;
-        border-radius: 4px;
-        text-decoration: none;
-        font-weight: bold;
-        margin-top: 1em;
-    }
-    
-    .Studenthistorier-text .button:hover {
-        background-color: #333;
-    }
-    
-    /* Image container */
-    .Studenthistorier-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        object-fit: cover; 
-    }
-    
-
-    FOOTER CSS
-    .footer {
-        background-color: #f2e9e4;
-        color: #333;
-        font-family: Arial, sans-serif;
-        padding: 20px;
-        line-height: 1.6;
-    }
-    
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-    
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-    
-    .footer-section {
-        flex: 1;
-        min-width: 200px;
-    }
-    
-    .footer h4 {
-        color: black;
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .footer address {
-        font-style: normal;
-        line-height: 1.8;
-        margin-bottom: 1rem;
-    }
-    
-    .footer p {
-        margin: 1.5rem 0;
-    }
-    
-    .footer ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .footer li {
-        margin-bottom: 0.8rem;
-    }
-    
-    .footer a {
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-    
-    .footer a:hover {
-        color: #0056b3;
-    }
-    
-    .social-links {
-        display: flex;
-        gap: 1.2rem;
-        margin-top: 1rem;
-        flex-wrap: wrap; /* Gjør ikonene responsive for å unngå overlapping */
-    }
-    
-    .social-links a {
-        background-color: #0056b3;
-        border-radius: 50%;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        width: 40px;
-        transition: background-color 0.3s ease;
-        position: relative;
-        z-index: 1; /* Sørger for at ikonene ikke overlapper andre elementer */
-    }
-    
-    .social-links a:hover {
-        background-color: red;
-        text-decoration: none;
-    }
-    
-    /* Kontakt oss */
-    .footer-sectionutdannings-spørsmål {
-        margin-top: 30px;
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .person {
-        display: flex;
-        align-items: center;
-    }
-    
-    .contact1-info {
-        display: flex;
-        align-items: center; /* Justerer innholdet vertikalt */
-        gap: 1em; /* Legger til avstand mellom bilde og tekst */
-    }
-    
-    .fagligleder-picture {
-        width: 150px;
-        height: auto;
-        margin-right: 0; 
-        border-radius: 6%;
-        flex-shrink: 0; 
-    }
-    
-    .contact1-details {
-        flex: 1; 
-        display: flex;
-        flex-direction: column; 
-        justify-content: center; 
-    }
-    
-    .contact1-details p {
-        margin: 0.5em 0; 
-        font-size: 1em; 
-        line-height: 1.4; 
-    }
-    
-    .contact1-details a {
-        color: black; 
-        text-decoration: none; 
-        font-weight: bold; 
-    }
-    
-    .contact1-details a:hover {
-        text-decoration: underline; 
-        color: #0056b3; 
-    }
-    
-    .details p {
-        margin: 5px 0;
-    }
-    
-    a {
-        color: black;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        text-decoration: underline;
-    }
-    
-    .footer-bottom {
-        border-top: 1px solid #ddd;
-        margin-top: 2.5rem;
-        padding-top: 1.5rem;
-        text-align: center;
-    }
-    
-
-    .footer-section {
-        margin-bottom: 2rem;
-    }
-    
-    .social-links a {
-        margin-right: 0.5rem;
-    }
-    
-   /*--------------------------------------------------------------INDEX HTML-SLUTT--------------------------------------------------------------------------------------------------------------------*/ 
-    
-/* Mobile (between 480px && 600px) */
-@media ((min-width:150px) and (max-width:480px)){
-
-
-    nav ul{
-        display: grid;
-        grid-template-columns: 1.2fr;
         
-    }
+/* GRID-LAYOUT */
+.grid {
+    display: grid; /* Bruker CSS grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamisk kolonneinndeling */
+    gap: 20px; /* Avstand mellom elementer */
+}
+
+
+/* DESIGN FOR ARTIKLER */
+.main_content {
+    background-color: #f2e9e4; /* Bakgrunnsfarge */
+    border-radius: 10px; /* Runder hjørner */
+    overflow: hidden; /* Skjuler innhold som går utenfor boksen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+}
+
+
+article img {
+    width: 100%; /* Bildene fyller hele bredden */
+    height: 200px; /* Fast høyde */
+    object-fit: cover; /* Sørger for at bildet passer inn i rammen */
+}
+
+
+.main_content section {
+    padding: 20px; /* Innvendig avstand */
+}
+
+
+.main_content h2 {
+    margin-top: 0; /* Ingen ekstra avstand på toppen */
+    color: #333; /* Farge på overskriften */
+}
+
+.main_content p {
+    color: #666; /* Tekstfarge */
+}
+
+/* STIL FOR <section> INNENFOR <article> */
+article section {
+    padding: 1.2em 0 1.2em 0; /* Legger til 1.2em innvendig avstand over og under innholdet (topp/bunn). Ingen avstand på sidene. */
+}
+
+/* STIL FOR <h2> INNENFOR <article> */
+article h2 {
+    margin-top: 0; /* Fjerner standard toppmargin, slik at overskriften starter rett fra toppen av sitt foreldre-element. */
+    color: #333; /* Setter tekstfargen til mørk grå for bedre kontrast og lesbarhet. */
+}
+
+/* STIL FOR <p> (AVSNITT) INNENFOR <article> */
+article p {
+    color: #666; /* Setter tekstfargen til lys grå for å skille avsnitt fra overskrifter og gi et subtilt utseende. */
+}
+
+
+
+
+
+/* STUDENTHISTORIER */
+.Studenthistorier-wrapper {
+    display: grid; /* Grid-layout for historier */
+    grid-template-columns: 1fr 1fr; /* To like brede kolonner */
+    gap: 1em; /* Avstand mellom kolonner */
+    align-items: center; /* Vertikal justering av innhold */
+    width: 63.2%; /* Bredde på seksjonen */
+    margin: 2em auto; /* Sentrer seksjonen */
+    padding: 2em; /* Innvendig avstand */
+    background-color: #F2F4F4; /* Bakgrunnsfarge */
+    border-radius: 8px; /* Runde hjørner */
+}
+
+
+/* STIL FOR HOVEDOVERSKRIFT INNENFOR .Studenthistorier-text */
+.Studenthistorier-text h2 {
+    font-size: 2em; /* Setter fontstørrelsen til 2em for en stor og fremtredende overskrift. */
+    color: #000; /* Bruker svart tekstfarge for høy kontrast og lesbarhet. */
+    margin-bottom: 0.5em; /* Legger til 0.5em avstand under overskriften for visuell separasjon. */
+}
+
+/* STIL FOR TEKSTBLOKKEN I .Studenthistorier-text */
+.Studenthistorier-text {
+    font-size: 1.1em; /* Justerer tekststørrelsen for bedre lesbarhet. */
+    line-height: 1.6; /* Øker linjehøyden for å forbedre lesbarhet og gi bedre luft mellom linjene. */
+  
+}
+
+/* STIL FOR KNAPP INNENFOR .Studenthistorier-text */
+.Studenthistorier-text .button {
+    display: inline-block; /* Gjør knappen til et blokkelement som oppfører seg som tekst, slik at den kan plasseres inline. */
+    background-color: #000; /* Setter bakgrunnsfargen på knappen til svart. */
+    color: #fff; /* Gjør tekstfargen hvit for å skape kontrast mot den svarte bakgrunnen. */
+    padding: 0.8em 1.5em; /* Legger til indre avstand i knappen for å gjøre den større og mer klikkbar. */
+    border-radius: 4px; /* Gjør hjørnene på knappen avrundet for et moderne utseende. */
+    text-decoration: none; /* Fjerner understrek fra knappekoblinger. */
+    font-weight: bold; /* Gjør teksten i knappen fet for bedre synlighet. */
+    margin-top: 1em; /* Legger til avstand over knappen for å separere den fra andre elementer. */
+}
+
+/* HOVER-STIL FOR KNAPP INNENFOR .Studenthistorier-text */
+.Studenthistorier-text .button:hover {
+    background-color: #333; /* Endrer knappen til mørkegrå når brukeren holder musen over den, for interaktiv feedback. */
+}
+
+/* STIL FOR BILDE I .Studenthistorier-image */
+.Studenthistorier-image img {
+    width: 100%; /* Gjør at bildet tilpasser seg bredden på sin beholder for responsivt design. */
+    height: auto; /* Sørger for at bildeforholdet bevares når størrelsen justeres. */
+    border-radius: 8px; /* Gjør hjørnene på bildet avrundet for en estetisk appell. */
+    object-fit: cover; /* Sørger for at bildet fyller hele området uten å forvrenge forholdet, ved å beskjære om nødvendig. */
+}
     
-    nav ul li{
-        margin: 1.5em;
-        font-size: 1.2em;
-        padding: 0.2em;
-      }
+
+
+/* STIL FOR FOOTER-KOMPONENTER */
+.footer {
+    background-color: #f2e9e4; /* Setter en lys bakgrunnsfarge for footeren. */
+    color: #333; /* Definerer tekstfargen som mørk grå for god kontrast. */
+    font-family: Arial, sans-serif; /* Angir en enkel og lesbar font. */
+    padding-top: 1em; /* Legger til indre avstand for å gi rom rundt innholdet. */
+    line-height: 1.6; /* Øker linjehøyden for bedre lesbarhet. */
+}
+
+/* STIL FOR KONTAINEREN SOM INNEHOLDER FOOTER */
+.container {
+    max-width: 1200px; /* Begrenser bredden til 1200px for å unngå for bred visning. */
+    margin: 0 auto; /* Sentrerer innholdet horisontalt. */
+    padding: 0 1rem; /* Legger til litt horisontal avstand rundt innholdet. */
+}
+
+/* STIL FOR FOOTER-INNHOLDSOPPSETT */
+.footer-content {
+    display: flex; /* Bruker flexbox for å arrangere elementene horisontalt. */
+    flex-wrap: wrap; /* Tillater innholdet å brytes til flere linjer hvis nødvendig. */
+    justify-content: space-between; /* Fordeler elementene jevnt med plass mellom. */
+    gap: 1em; /* Legger til avstand mellom elementene. */
+}
+
+/* STIL FOR INDIVIDUELLE SEKSJONER INNENFOR FOOTER */
+.footer-section {
+    flex: 1; /* Tillater seksjonen å vokse og fylle tilgjengelig plass. */
+    min-width: 200px; /* Sikrer at seksjonen ikke blir for smal. */
+}
+
+.footer h4 {
+    color: black; /* Setter overskriftsfargen til svart for å skille den fra tekst. */
+    font-size: 1.2rem; /* Definerer en moderat størrelse for overskriften. */
+    margin-bottom: 1.5rem; /* Legger til avstand under overskriften for separasjon. */
+}
+
+.footer address {
+    font-style: normal; /* Beholder normal tekststil for adresse. */
+    line-height: 1.8; /* Gir bedre luft mellom linjene i adresseinformasjonen. */
+    margin-bottom: 1rem; /* Legger til avstand under adressen. */
+}
+
+.footer p {
+    margin: 1.5rem 0; /* Gir avstand over og under avsnitt. */
+}
+
+/* STIL FOR LISTEINNHOLD I FOOTER */
+.footer ul {
+    list-style: none; /* Fjerner standard listepunkt-symboler. */
+    padding: 0; /* Fjerner standard innrykk. */
+}
+
+.footer li {
+    margin-bottom: 0.8rem; /* Legger til avstand mellom listeelementer. */
+}
+
+.footer a {
+    color: #333; /* Setter lenkefargen til mørk grå. */
+    text-decoration: none; /* Fjerner understrek fra lenker. */
+    transition: color 0.3s ease; /* Gir en jevn overgang når lenkefargen endres. */
+}
+
+.footer a:hover {
+    color: #0056b3; /* Endrer lenkefargen til blå ved hover. */
+}
+
+/* STIL FOR SOSIALE MEDIER IKONER */
+.social-links {
+    display: flex; /* Arrangerer ikonene horisontalt. */
+    gap: 1.2rem; /* Legger til avstand mellom ikonene. */
+    margin-top: 1rem; /* Legger til avstand over seksjonen. */
+    margin-right: 1em;
+    flex-wrap: wrap; /* Sikrer at ikonene brytes til ny linje på mindre skjermer. */
+}
+
+.social-links a {
+    background-color: #0056b3; /* Setter bakgrunnsfargen til blå for ikonene. */
+    border-radius: 50%; /* Gjør ikonene runde. */
+    color: #fff; /* Gjør ikonfargen hvit for kontrast. */
+    display: flex; /* Bruker flexbox for å sentrere innholdet. */
+    align-items: center; /* Sentrerer innholdet vertikalt. */
+    justify-content: center; /* Sentrerer innholdet horisontalt. */
+    height: 40px; /* Setter høyden til ikonene. */
+    width: 40px; /* Setter bredden til ikonene. */
+    transition: background-color 0.3s ease; /* Jevn overgang for bakgrunnsfarge. */
+    position: relative; /* Sørger for at ikonene ikke overlapper andre elementer. */
+    z-index: 1; /* Hever ikonene over andre elementer. */
+}
+
+.social-links a:hover {
+    background-color: red; /* Endrer bakgrunnsfargen til rød ved hover. */
+    text-decoration: none; /* Bevarer fravær av understrek ved hover. */
+}
+
+/* KONTAKT-SEKSJON I FOOTER */
+.footer-sectionutdannings-spørsmål {
+    margin-top: 30px; /* Legger til avstand over kontaktseksjonen. */
+    display: flex; /* Bruker flexbox for å arrangere innhold horisontalt. */
+    align-items: flex-start; /* Justerer innholdet til toppen av beholderen. */
+}
+
+.person {
+    display: flex; /* Bruker flexbox for å arrangere personrelaterte elementer. */
+    align-items: center; /* Justerer innholdet vertikalt. */
+}
+
+/* STIL FOR KONTAKTINFORMASJON */
+.contact1-info {
+    display: flex; /* Arrangerer bilde og tekst horisontalt. */
+    align-items: center; /* Justerer elementene vertikalt. */
+    gap: 1em; /* Legger til avstand mellom bilde og tekst. */
+}
+
+.fagligleder-picture {
+    width: 150px; /* Setter bredden på bildet til 150px. */
+    height: auto; /* Bevarer bildeforholdet. */
+    margin-right: 0; /* Ingen margin på høyre side. */
+    border-radius: 6%; /* Gjør hjørnene på bildet avrundet. */
+    flex-shrink: 0; /* Hindrer bildet i å krympe i mindre beholdere. */
+}
+
+.contact1-details {
+    flex: 1; /* Lar tekstinnholdet fylle tilgjengelig plass. */
+    display: flex; /* Bruker flexbox for vertikal layout av tekst. */
+    flex-direction: column; /* Arrangerer teksten i kolonneformat. */
+    justify-content: center; /* Sentrerer teksten vertikalt i beholderen. */
+}
+
+.contact1-details p {
+    margin: 0.5em 0; /* Legger til avstand mellom tekstlinjer. */
+    font-size: 1em; /* Setter tekststørrelsen til 1em for konsistens. */
+    line-height: 1.4; /* Justerer linjehøyden for bedre lesbarhet. */
+}
+
+.contact1-details a {
+    color: black; /* Gjør lenkene svarte for konsistent stil. */
+    text-decoration: none; /* Fjerner understrek fra lenkene. */
+    font-weight: bold; /* Gjør lenkene fet for bedre synlighet. */
+}
+
+.contact1-details a:hover {
+    text-decoration: underline; /* Legger til understrek ved hover for tydelig interaktivitet. */
+    color: #0056b3; /* Endrer lenkefargen til blå ved hover. */
+}
+
+/* STIL FOR FOOTER-BUNNTEKST */
+.footer-bottom {
+    border-top: 1px solid #ddd; /* Legger til en lys linje over bunndelen for separasjon. */
+    margin-top: 2.5rem; /* Legger til avstand over bunndelen. */
+    padding-top: 1.5rem; /* Gir plass over teksten i bunndelen. */
+    text-align: center; /* Sentrerer innholdet i bunndelen. */
+}
+
+
+
+   /* Kode for Github */
+
+
+/* Lists Styling */
+
+ul {
+    list-style: disc; /* Definerer stil for listepunkter som disker (fylte sirkler). */
+    padding-left: 1.5em; /* Flytter listen 1.5em inn fra venstre for å lage et innrykk. */
+    justify-content: space-around; /* **Ikke effektiv her**, da `ul` mangler en 'display: flex' eller lignende layout-metode. */
+}
+
+header nav ul {
+    margin: 0; /* Fjerner standard margin rundt ul-elementet i navigasjonsmenyen. */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Fjerner understrek fra lenkene for et renere utseende. */
+    color: black; /* Setter tekstfargen til svart. */
+    font-weight: bold; /* Gjør teksten i lenkene fet for tydeligere visning. */
+    text-align: center; /* Sentrerer teksten horisontalt i hver lenke. */
+}
+
+.gridGIT-container {
+    display: grid; /* Angir at dette elementet bruker CSS Grid-layout. Gjør det enkelt å organisere innhold i rader og kolonner. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lager dynamiske kolonner som er minst 300px brede, men kan strekke seg for å fylle plassen (1fr). 'auto-fit' justerer antall kolonner basert på tilgjengelig plass. */
+    gap: 1.5em; /* Legger til en avstand på 1.5em mellom grid-elementene. */
+    margin: 0 auto; /* Sentrerer grid-containeren horisontalt på siden. */
+}
+
+/* Sections in the Grid */
+.intro, .fordeler, .utfordringer, .images {
+    background-color: #f4f4f4; /* Setter en lys grå bakgrunnsfarge for disse seksjonene. */
+    padding: 1em; /* Legger til innvendig avstand (padding) rundt innholdet i seksjonene. */
+    border-radius: 8px; /* Lager avrundede hjørner med en radius på 8px for en mykere visuell effekt. */
+}
+
+
+.image-grid {
+    display: grid; /* Bruker CSS Grid for å organisere bilder i et rutenett. */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Oppretter responsive kolonner som er minst 150px brede, men kan vokse til å fylle plassen. */
+    gap: 1em; /* Setter en avstand på 1em mellom grid-elementene. */
+}
+
+.image-grid img {
+    width: 100%; /* Bildene fyller bredden av hver grid-celle. */
+    border: 1px solid #ddd; /* Legger til en tynn, lys grå kantlinje rundt bildene. */
+    border-radius: 5px; /* Avrunder kantene på bildene med en radius på 5px. */
+}
+
+.containerGIT {
+    position: relative; /* Gjør det mulig å plassere absolutte elementer inni denne containeren. */
+    width: 100%; /* Gjør containeren 100% bredde av dens overordnede element. */
+    height: 40em; /* Setter en fast høyde på 40em for containeren. */
+    overflow: hidden; /* Skjuler innhold som går utenfor containerens grenser. */
+}
+
+.AIbilde {
+    width: 100%; /* Bildet fyller hele bredden til containeren. */
+    height: 100%; /* Bildet fyller hele høyden til containeren. */
+    object-fit: cover; /* Bildet tilpasses slik at det dekker hele containeren, uten deformasjon. */
+}
+   
+
+.AIBildeTekstContainer {
+    position: absolute; /* Plasserer tekstcontaineren relativt til den nærmeste forelderen med 'position: relative'. */
+    top: 50%; /* Flytter containeren 50% ned fra toppkanten. */
+    left: 50%; /* Flytter containeren 50% inn fra venstre kanten. */
+    transform: translate(-50%, -50%); /* Sentrerer containeren ved å justere dens posisjon tilbake halvparten av dens egen størrelse. */
+    z-index: 1; /* Sørger for at tekstcontaineren vises over andre elementer. */
+    background-color: rgba(0, 0, 0, 0.6); /* Gir containeren en halvtransparent svart bakgrunn. */
+    color: white; /* Setter tekstfargen til hvit for høy kontrast. */
+    text-align: center; /* Sentrerer teksten horisontalt. */
+    padding: 1em; /* Gir innvendig avstand rundt teksten. */
+    border-radius: 8px; /* Gjør hjørnene på containeren avrundede. */
+    max-width: 80%; /* Begrenser bredden på containeren til maksimalt 80% av forelderelementet. */
+}
+  
+.AIBildeTekstContainer p {
+    color: white; /* Setter teksten inni `<p>`-elementet til hvit farge. */
+}
 
  
+.content-section {
+    padding: 2em; /* Gir rikelig med innvendig avstand rundt seksjonen. */
+    background-color: #f8f9fa; /* Gir seksjonen en lys bakgrunnsfarge for bedre lesbarhet. */
+}
 
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    grid-template-rows: auto; /* Dynamic row heights */
+    gap: 1em; /* Space between items */
+    margin: 0 auto; /* Center the grid */
+    padding: 1em;
+}
+
+.screenshot-item {
+    background-color: rgba(200, 200, 255, 0.3); /* Gir en lys blå bakgrunnsfarge med 30% opasitet. */
+    padding: 1em; /* Gir innvendig avstand rundt innholdet i hvert element. */
+    border-radius: 5px; /* Gjør hjørnene avrundede. */
+    height: auto; /* Lar høyden justeres automatisk basert på innholdet. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legger til en subtil skygge for å gi dybde. */
+    text-align: center; /* Sentrerer tekst og innhold horisontalt. */
+}
+
+.screenshot-item h4 {
+    padding-bottom: 1em; /* Legger til avstand under overskriften. */
+}
+
+.screenshot-item img {
+    width: 100%; /* Bildet fyller hele bredden til containeren. */
+    height: auto; /* Bildets høyde justeres automatisk for å opprettholde proporsjoner. */
+    display: block; /* Hindrer uønsket mellomrom under bildet. */
+    object-fit: contain; /* Bildet tilpasses slik at hele bildet vises, uten å bli beskåret. */
+    border-radius: 5px; /* Gjør kantene på bildet avrundede. */
+}
+
+.text-item {
+    grid-column: 1 / -1; /* Denne stilen gjør at elementet strekker seg over hele bredden av grid-systemet. "1 / -1" betyr fra første til siste kolonne. */
+    background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+    padding: 1.5em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+    border-radius: 8px; /* Gjør hjørnene avrundede med en radius på 8px for en mykere visuell effekt. */
+    text-align: left; /* Justerer teksten til venstre inne i elementet. */
+}
+   
+.text-item p {
+    margin: 1em; /* Legger til avstand rundt avsnittene i elementet. */
+    text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+    font-size: 1.1em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+    line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+    color: #333; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+}
+
+
+.rights {
+    text-align: center; /* Justerer teksten horisontalt i midten av containeren. */
+    background-color: #F4F5F7; /* Setter en lys grå bakgrunn for å skille denne delen visuelt fra andre seksjoner. */
+}
+
+/* Mobile (between 150px && 480px) */
+/* CSS-stil for små skjermer, fokuserer på responsive design og vertikal stabling. */
+@media ((min-width:150px) and (max-width:480px)) {
+
+    /* Navigasjonsmeny */
+    nav ul {
+        display: grid; /* Bruker grid-layout for å stable menyen vertikalt. */
+        grid-template-columns: 1.2fr; /* Definerer én kolonne for elementene. */
+    }
     
-  header{
-        background-color: #F2F4F4;
-        height: 7em;
-        width: 100%;;
-        padding-bottom: 1em;
-    
+    nav ul li {
+        margin: 1.5em; /* Legger til mellomrom mellom listeelementene. */
+        font-size: 1.2em; /* Øker fontstørrelsen for bedre lesbarhet. */
+        padding: 0.2em; /* Gir ekstra innvendig avstand. */
     }
 
+    /* Header-styling */
+    header {
+        background-color: #F2F4F4; /* Lys grå bakgrunn for header. */
+        height: 7em; /* Setter fast høyde. */
+        width: 100%; /* Fyller hele bredden. */
+        padding-bottom: 1em; /* Ekstra plass under innholdet. */
+    }
+
+    /* Innhold som bruker flexbox */
     main .flex-innhold {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: auto;
+        display: grid; /* Endrer flex til grid for mer kontroll på små skjermer. */
+        grid-template-columns: 1fr; /* Én kolonne for vertikal stabling. */
         grid-template-areas: 
             "info-item1"
-            "info-item2" 
+            "info-item2"
             "info-item3"
             "info-item4"
             "info-item5"
             "info-item6"
-            "info-item7";
-            gap: 1em;
+            "info-item7"; /* Spesifikasjon av områdene i grid-layout. */
+        gap: 1em; /* Plass mellom elementene. */
     }
 
 
-    
-    /* Forslag-til-studie responsive columns */
-    .Forslag-til-studie {
-        
-        grid-template-columns: 1fr;
-        grid-template-rows: auto; /* Single column for mobile */
-      
-        height:auto;
-        width: auto;
-        grid-template-areas: 
-        "forslag-1"
-        "forslag-2"
-        "forslag-3"
-        "forslag-4" 
-        "forslag-5"
-        "forslag-6"
-        "forslag-7"
-        "forslag-8" ;
-
-        margin: 1em auto;
+    /* Menystil */
+    nav ul {
+        flex-direction: row; /* Gjør elementene liggende horisontalt på mindre skjermer. */
+        align-items: center; /* Justerer innhold vertikalt. */
+    }
+    nav ul li {
+        width: 100%; /* Elementene fyller hele bredden. */
+        text-align: center; /* Sentraliserer teksten i hvert element. */
+        margin: 0.2em auto; /* Mindre margin for å unngå overlapp. */
+    }
+    nav ul li a {
+        display: block; /* Endrer lenker til blokk-elementer for enkel klikk. */
+        width: 100%; /* Full bredde for bedre lesbarhet. */
+        text-align: center; /* Sentraliserer lenketeksten. */
     }
 
-    nav ul{
-       
-        flex-direction:row;
-        align-items: center;
-    
-    }
-    nav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 0.2em auto; /* Reduce margin to prevent overflow */
-    }
-    nav ul li a{
-        display: block;
-        width: 100%;
-        text-align: center;
-
-    } 
-
-    .img-container img{
-        display: none;
+    /* Skjuler bilder i img-container på små skjermer */
+    .img-container img {
+        display: none; /* Bilder skjules for å spare plass. */
     }
 
-
-    .img-container{
-        height: auto;
-        width:100%;
-        align-items: center;
-        background-image:url("Bilder/studenter.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position:relative;
-
+    /* Stil for bakgrunnsbilde i img-container */
+    .img-container {
+        height: auto; /* Automatisk høyde tilpasset innholdet. */
+        width: 100%; /* Full bredde. */
+        align-items: center; /* Sentrerer innhold vertikalt. */
+        background-image: url("Bilder/studenter.webp"); /* Setter et bakgrunnsbilde. */
+        background-size: cover; /* Fyller containeren med bildet. */
+        background-repeat: no-repeat; /* Ingen gjentakelse av bildet. */
+        background-position: center; /* Sentrerer bildet. */
+        position: relative; /* Gjør det mulig å posisjonere innhold relativt til containeren. */
     }
 
+    /* Studie-info styling */
     .studie-info {
-        /* position: absolute;  */
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-     
+        width: 100%; /* Full bredde for innholdet. */
+        height: 100%; /* Fyller høyden til containeren. */
+        padding: 0.5em; /* Indre avstand rundt teksten. */
+        display: flex; /* Flex-layout for vertikal justering. */
+        flex-direction: column; /* Arrangerer elementene vertikalt. */
+        justify-content: center; /* Sentrerer innhold vertikalt. */
+        align-items: center; /* Sentrerer innhold horisontalt. */
     }
 
-    .studie-info h1{
-        padding-top: 0.7em;
-        /* padding-right: 1em; */
-        font-size: 2.1em;
-        text-align: center;
-        
+    .studie-info h1 {
+        padding-top: 0.7em; /* Avstand over overskriften. */
+        font-size: 2.1em; /* Større overskrift for fremheving. */
+        text-align: center; /* Sentraliserer overskrift. */
     }
 
-    .studie-info p{
-        font-size: 1.2em;
-        text-align: center;
-        margin-right: 1.2rem;
-        /* padding-right: 1.2em; */
+    .studie-info p {
+        font-size: 1.2em; /* Øker tekststørrelsen. */
+        text-align: center; /* Sentraliserer teksten. */
+        margin-right: 1.2rem; /* Justerer høyre margin for bedre plassering. */
     }
 
-   
-       /* Stacking flex-innhold items vertically */
-       .flex-innhold {
-        grid-template-columns: 1fr;
-        gap: 0.9em;
+    /* Fleksible innholdselementer */
+    .flex-innhold {
+        grid-template-columns: 1fr; /* Én kolonne for små skjermer. */
+        gap: 0.9em; /* Mindre avstand mellom elementene. */
     }
 
     .wrapper {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Endrer layout til kolonne. */
+        align-items: center; /* Sentrerer elementene. */
     }
 
-    .container {
-        width: 100%; /* Full-width on smaller screens */
-        padding: 0.4em; 
-        gap: 0.3em; /* Less gap on small screens */
-    }
-
-        
+    /* Tabellstil */
     .firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table {
-       
-        
-        margin-bottom: 1.5em; /* Adjust margin for spacing */
-        padding: 0;
-        table-layout: fixed;
-        word-wrap: break-word;
-      
-        
+        margin-bottom: 1.5em; /* Avstand mellom tabellene. */
+        padding: 0; /* Ingen indre avstand. */
+        table-layout: fixed; /* Tabellcellene har fast bredde. */
+        word-wrap: break-word; /* Bryter ord for å forhindre overløp. */
     }
+
     caption {
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin-bottom: 1.8em;
-        text-align: center;
-        
+        font-weight: bold; /* Fremhever tabelloverskriften. */
+        font-size: 1.2rem; /* Øker fontstørrelsen. */
+        margin-bottom: 1.8em; /* Avstand under overskriften. */
+        text-align: center; /* Sentraliserer overskriften. */
     }
 
-    thead th {
- 
-         padding: 0.3em;
-        font-size: 0.7em;
-        border: 1px solid #343a40;
-   
- 
+    thead th, tbody td {
+        padding: 0.3em; /* Justerer cellestørrelsen. */
+        font-size: 0.7em; /* Reduserer tekststørrelsen. */
+        border: 1px solid #343a40; /* Legger til ramme rundt celler. */
     }
 
-   
-    tbody td {
-    
-    padding: 0.1em;
-    font-size: 0.7em;
-    border: 1px solid #343a40;
- 
-   
-    
-  
-    }
-
+    /* Grid-elementer */
     .grid-item {
-        margin: 0 auto;
-        width: 100%; /* Full width for each grid item */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto; /* Sentrerer hvert element. */
+        width: 100%; /* Full bredde for hvert grid-element. */
+        display: flex; /* Bruker flex-layout for innholdstilpasning. */
+        flex-direction: column; /* Vertikal layout. */
+        align-items: center; /* Sentrerer innholdet. */
     }
 
-   
     .grid-tittler {
-    
-        font-size: 1.1em;
-        margin-bottom: 2em;
-        text-align: center;
-
-        padding: 0.5em; 
-       
-    }
-   
-
-    .forstudie{
-       
-        padding: 0;
-        margin: auto 0;
-        display: block;
-      
+        font-size: 1.1em; /* Moderat tekststørrelse for titler. */
+        margin-bottom: 2em; /* Avstand under titlene. */
+        text-align: center; /* Sentraliserer teksten. */
+        padding: 0.5em; /* Gir innvendig avstand. */
     }
 
-    .forstudie li{
-        
-        font-size: 0.7em; /* Scale text for better fit */
-        padding: 0.2em 0; /* Adjust padding */
-        text-align: center; /* Align text for readability */
-    }
-    
-
-    .studieretningforlslag {
-       
-        padding: 0.4em;
-        border-radius: 4px;
-        margin-bottom: 1em; /* Add spacing between items */  
-      
-     
-    }
-
-    .studieretninginfo-title {
-        font-size: 1em; /* Reduce title font size */
-        margin-bottom: 0.5em;
-        text-align: center;
-    }
-
-    
-
-    h2.studieretninginfo-title {
-        font-size: 0.9em;
-    }
-
-    /* Adjust the <details> container for small screens */
-    details {
-        margin: 0.4em;
-    }
+    /* Studenthistorier */
     .Studenthistorier-text h2 {
-        font-size: 1.1em;
-        margin-bottom: 0.4em;
-    }
-
-
-    .Studenthistorier-text .button {
-        
-        padding: 0.8em auto;
-        font-size: 0.6rem;
-     
-        margin-top: 1em;
+        font-size: 1.1em; /* Redusert størrelse for mindre skjermer. */
+        margin-bottom: 0.4em; /* Avstand under overskriften. */
     }
 
     .Studenthistorier-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      
-        margin: 1.7em auto;
-        padding: 2%;
-      
-        border-radius: 5px;
+        display: flex; /* Fleksibel layout. */
+        flex-direction: column; /* Vertikal stabling. */
+        align-items: center; /* Sentrerer innholdet. */
+        margin: 1.7em auto; /* Sentraliserer wrapper. */
+        padding: 2%; /* Indre avstand for pusterom. */
+        border-radius: 5px; /* Avrundede hjørner. */
     }
-
-    
-   
-     
-
-    
-
 }
 
-@media (max-width:1380px){
-    .forstudie{
-        display: block;
-        justify-content: space-around;
-        list-style-type: none;
+   
+
+/* specific scrren size for some class elements*/
+@media (max-width:1380px) {
+    .forstudie {
+        display: block; /* Bytter til blokkvisning for å stable elementer vertikalt. */
+        justify-content: space-around; /* Plassering mellom elementene. */
+        list-style-type: none; /* Fjerner standard punktmerking. */
     }
-        .screenshots-grid {
-            grid-template-columns: 1fr !important;
-            gap: 1em;
-        }
-        .screenshot-item {
-            height: 15em; /* Smaller height for mobile */
-        }
-
-
+    .screenshots-grid {
+        grid-template-columns: 1fr !important; /* Enkel kolonne for responsiv layout. og bruk av !important er for 
+        å overstyre strukturen til nettside */
+        gap: 1em; /* Gir avstand mellom grid-elementer. */
+    }
+    .screenshot-item {
+        height: 15em; /* Justerer høyden for mindre skjermer. */
+    }
 }
 
 /* tablet size screen */
-@media ((min-width:481px) and (max-width:768px) ) {
-        main .flex-innhold {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: auto;
+
+@media ((min-width:481px) and (max-width:768px)) {
+    main .flex-innhold {
+        display: grid; /* Bruker grid for strukturert layout. */
+        grid-template-columns: 1fr; /* Enkel kolonne. */
+        grid-template-rows: auto; /* Automatisk justering av høyden. */
         grid-template-areas: 
-            "info-item1 info-item2 ." 
+            "info-item1 info-item2 ."
             "info-item3 info-item4 ."
             "info-item5 info-item6 ."
-            "info-item7";
-        gap: 1em;
-        margin: 1em auto;
-        }
-
-
-    nav ul{
-       
-        flex-direction:row;
-        align-items: center;
-        width: 100%;
-    
-    }
-    nav ul li{
-        width: 100%;
-        text-align: center;
-    }
-    nav ul li a{
-        display: block;
-        width: 100%;
-        text-align: center;
-
-    } 
-
-    .img-container img{
-        display: none;
+            "info-item7"; /* Designet for fleksibilitet, men plasseringen kan trenge finjustering. */
+        gap: 1em; /* Avstand mellom grid-elementer. */
+        margin: 1em auto; /* Sentralisert margin. */
     }
 
+    nav ul {
+        flex-direction: row; /* Gjør navigasjonselementer horisontale. */
+        align-items: center; /* Vertikal justering. */
+        width: 100%; /* Full bredde. */
+    }
+    nav ul li {
+        width: 100%; /* Sørger for lik bredde på navigasjonselementer. */
+        text-align: center; /* Sentraliserer teksten. */
+    }
+    nav ul li a {
+        display: block; /* Endrer lenker til blokk-elementer for mer klikkbart område. */
+        width: 100%; /* Fyller hele bredden av forelder. */
+        text-align: center; /* Sentraliserer lenketeksten. */
+    }
 
-    .img-container{
-        height: auto;
-        width:100%;
-        align-items: center;
-        background-image:url("Bilder/studenter.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position:relative;
+    .img-container img {
+        display: none; /* Skjuler bilder på mindre skjermer for å spare plass. */
+    }
 
+    .img-container {
+        height: auto; /* Automatisk høydejustering. */
+        width: 100%; /* Full bredde. */
+        align-items: center; /* Sentrerer innhold vertikalt. */
+        background-image: url("Bilder/studenter.webp"); /* Bruker bakgrunnsbilde. */
+        background-size: cover; /* Fyller containeren. */
+        background-repeat: no-repeat; /* Ingen repetisjon av bildet. */
+        background-position: center; /* Sentrerer bildet i containeren. */
+        position: relative; /* Muliggjør posisjonering av innhold. */
     }
 
     .studie-info {
-        /* position: absolute;  */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0.7em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-     
+        /* position: absolute; */ /* Kommentert ut, sannsynligvis for å unngå at elementet overlapper andre. */
+        top: 0; /* Plasserer elementet øverst i containeren. */
+        left: 0; /* Plasserer elementet helt til venstre. */
+        width: 100%; /* Gjør at `.studie-info` strekker seg over hele bredden av containeren. */
+        height: 100%; /* Sørger for at elementet dekker hele høyden av containeren. */
+        padding: 0.7em; /* Gir litt innvendig plass rundt innholdet for bedre lesbarhet. */
+        display: flex; /* Bruker fleksboks for layout. */
+        flex-direction: column; /* Stabler elementene vertikalt inni `.studie-info`. */
+        justify-content: center; /* Sentraliserer innholdet vertikalt. */
+        align-items: center; /* Sentraliserer innholdet horisontalt. */
     }
 
-    .studie-info h1{
-        padding-top: 0.8rem;
-        
+    .studie-info h1 {
+        padding-top: 0.8rem; /* Gir litt ekstra avstand over overskriften. */
     }
+   
 
-    .studie-info p{
-        text-align: center;
+    .studie-info p {
+        text-align: center; /* Sentraliserer teksten for bedre lesbarhet. */
     }
 
    
        /* Stacking flex-innhold items vertically */
-       .flex-innhold {
-        grid-template-columns: 1fr;
-        gap: 1em;
+    .flex-innhold {
+        grid-template-columns: 1fr; /* Enkel kolonne-layout, ideell for små skjermer. */
+        gap: 1em; /* Avstand mellom grid-elementene. */
     }
 
     .wrapper {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stabler innhold vertikalt. */
+        align-items: center; /* Sentraliserer innholdet horisontalt. */
     }
 
     .container {
@@ -1007,347 +1057,154 @@ tbody tr:nth-child(even) {
 
     .grid-tittler {
         font-size: 1em; /* Slightly smaller title */
-        margin-bottom: 5px;
+        margin-bottom: 5px; /* Gir avstand til elementet under. */
     }
 
     .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 {
-        padding: 0.8em; /* Less padding on mobile */
+        padding: 0.8em; /* Gir mellomrom inne i hver grid-element. */
+    
     }
 
 
 
-    /* Forslag-til-studie responsive columns */
-    .Forslag-til-studie {
-       
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto; /* Single column for mobile */
-        gap: 0.5em; /* Further reduce gap */
-        height:auto;
-        grid-template-areas: 
-        "forslag-1 forslag-2"
-        "forslag-3 forslag-4" 
-        "forslag-5 forslag-6"
-        "forslag-7 forslag-8" ;
-
-        margin: 1em auto;
-    }
-
-    /* Adjust individual suggestion boxes */
-    .forslag-1, .forslag-2, .forslag-3, .forslag-4,
-    .forslag-5, .forslag-6, .forslag-7, .forslag-8 {
-        padding: 0.8em; /* Decrease padding for mobile */
-        font-size: 1.3em; /* Smaller font size on mobile */
-    }
-
-    .firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table{
-        
-        width: 100%;
-        height:auto;
-        margin-bottom: 2.5em;
-        font-size: 0.9em;
+    .firstsemester_table, .secondsemester_table, .thirdsemester_table, .fourthsemester_table, .fivthsemester_table, .sixthsemester_table {
+        width: 100%; /* Tabellene fyller hele bredden av containeren, ideelt for responsive design. */
+        height: auto; /* Høyden justeres automatisk basert på innholdet i tabellen. */
+        margin-bottom: 2.5em; /* Gir god avstand mellom tabellene og andre elementer nedenfor. */
+        font-size: 0.9em; /* Gjør tekststørrelsen litt mindre for bedre passform. */
     }
 
     caption {
-      
-        font-size: 1.2em;
-        margin-bottom: 1.8em;
-        
+        font-size: 1.2em; /* Øker fontstørrelsen for overskriften, som gjør den mer fremtredende. */
+        margin-bottom: 1.8em; /* Gir tilstrekkelig avstand mellom overskriften og tabellen. */
         
     }
 
-    thead th{
-
-        padding: 0.3em;
-
+    thead th {
+        padding: 0.3em; /* Gir innvendig plass for å gjøre kolonneoverskriftene mer luftige. */
     }
 
-    tbody td{
-
-        padding: 0.3em;
-       
-
+    tbody td {
+        padding: 0.3em; /* Gir innvendig plass til cellene for bedre lesbarhet. */
     }
     
 }
 
-/* en liten desktop */
-@media (min-width: 769px) and (max-width: 1549px) { 
+/* Denne media-queryen fokuserer på skjermstørrelser for mindre desktop-enheter og skjermer */
 
+@media (min-width: 769px) and (max-width: 1549px){
 
-    nav ul{
-       
-        flex-direction:row;
-        align-items: center;
-        width: 100%;
+    nav ul {
+        flex-direction: row; /* Elementene plasseres horisontalt, typisk for en desktop-navigasjonsmeny. */
+        align-items: center; /* Justerer elementene vertikalt for bedre tilpasning. */
+        width: 100%; /* Menyen strekker seg over hele bredden. */
+    }
     
+    nav ul li {
+        width: 100%; /* Hver listeelement strekker seg over hele bredden av containeren. */
+        text-align: center; /* Sentraliserer innholdet i hvert listeelement. */
     }
-    nav ul li{
-        width: 100%;
-        text-align: center;
-    }
-    nav ul li a{
-        display: block;
-        width: 100%;
-        text-align: center;
-
-    } 
-
-    .img-container img{
-        display: none;
+    
+    nav ul li a {
+        display: block; /* Lenker vises som blokker for enkel klikkbarhet. */
+        width: 100%; /* Lenker strekker seg over hele bredden av elementet. */
+        text-align: center; /* Tekst i lenkene er sentrert. */
     }
 
-
-    .img-container{
-        height: auto;
-        width:100%;
-        align-items: center;
-        background-image:url("Bilder/studenter.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position:relative;
-
+    .img-container img {
+        display: none; /* Fjerner direkte bruk av bildeelementer for å bruke bakgrunnsbilde isteden. */
+    }
+    
+    .img-container {
+        height: auto; /* Dynamisk høyde basert på innholdet eller skjermstørrelsen. */
+        width: 100%; /* Full bredde for responsiv design. */
+        align-items: center; /* Sentraliserer innhold vertikalt. */
+        background-image: url("Bilder/studenter.webp"); /* Bruker et bakgrunnsbilde. */
+        background-size: cover; /* Sørger for at bildet fyller hele containeren uten å forvrenge dimensjonene. */
+        background-repeat: no-repeat; /* Hindrer at bildet repeteres. */
+        background-position: center; /* Sentraliserer bildet i containeren. */
+        position: relative; /* Gjør det mulig å plassere elementer relativt inni containeren. */
     }
 
     .studie-info {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-     
+        top: 0; /* Plasserer elementet øverst i containeren. */
+        left: 0; /* Plasserer elementet helt til venstre i containeren. */
+        width: 100%; /* Fyller hele bredden av containeren. */
+        height: 100%; /* Fyller hele høyden av containeren. */
+        padding: 0.9em; /* Gir luft rundt innholdet. */
+        display: flex; /* Bruker fleksibel layout for plassering av elementer. */
+        flex-direction: column; /* Innhold plasseres i en vertikal stabel. */
+        justify-content: center; /* Sentraliserer innhold vertikalt. */
+        align-items: center; /* Sentraliserer innhold horisontalt. */
     }
 
-    .studie-info h1{
-        padding-top: 0.7rem;
-        
-    }
-
-   
-       /* Stacking flex-innhold items vertically */
-       .flex-innhold {
-        grid-template-columns: 1fr;
-        gap: 0.8em;
+    .flex-innhold {
+        grid-template-columns: 1fr; /* Innholdet plasseres i én kolonne. */
+        gap: 0.8em; /* Gir avstand mellom elementene. */
     }
 
     .wrapper {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Alle barnelementer plasseres i en vertikal stabel. */
+        align-items: center; /* Sentraliserer innhold horisontalt. */
     }
 
     .container {
-        width: 100%; /* Full-width on smaller screens */
-        padding: 0.7em; /* Reduce padding for better fit */
-        gap: 0.7em; /* Less gap on small screens */
+        width: 100%; /* Fyller hele bredden av containeren for responsivitet. */
+        padding:0.6em ; /* Gir luft rundt innholdet. */
+        gap: 0.7em; /* Justerer avstanden mellom barnelementene. */
     }
-
-
-    
-    .Forslag-til-studie {
-        
-        grid-template-columns: repeat(3,1fr);
-        gap: 0.6em;
-        height:auto;
-        margin: 1.3em auto;
-        grid-template-areas: 
-        "forslag-1  forslag-2  forslag-3"
-        "forslag-4  forslag-5  forslag-6"
-        "forslag-7  forslag-8 .";
-
-     
-
-    }
-
-
-         /* Adjust individual suggestion boxes */
-    .forslag-1, .forslag-2, .forslag-3, 
-    .forslag-4, .forslag-5, .forslag-6, 
-    .forslag-7, .forslag-8 {
-        padding: 0.8em; 
-        font-size: 1.5em; 
-    }
-
 }
+
+/* skjermstørrelser mellom 120px og 1300px. Dette kan inkludere små skjermer som mobiltelefoner, 
+samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
 
 @media screen and (min-width: 120px) and (max-width: 1300px) {
-    .details{
-        width: 100%;
-    }
-    .Studenthistorier-image img {
-        display: none;
-    }
-    .footer{
-        width: 100%;
-    }
+    
+
     body, html {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; 
+        margin: 0; /* Fjerner marginene på body og html for å unngå utilsiktet mellomrom rundt siden. */
+        padding: 0; /* Fjerner padding på body og html for å sikre at innholdet bruker hele skjermarealet. */
+        overflow-x: hidden; /* Hindrer horisontal rulling hvis innholdet overskrider bredden. */
+    }
+    
+    .details {
+        width: 100%; /* Fyller hele bredden på skjermen. */
     }
 
+    .Studenthistorier-image img {
+        display: none; /* Skjuler bilder under denne media-queryen. */
+    }
+
+
+   
+   
     .Studenthistorier-wrapper {
-        background-image: url("Bilder/kontakt.webp"); /* Replace with your image URL */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        justify-content: center;
-        height: auto;
-        display: block;
-        width: auto;
-    }
-    .Studenthistorier-wrapper a{
-        color:#000;
+        background-image: url("Bilder/kontakt.webp"); /* Bakgrunnsbilde for wrapperen. */
+        background-size: cover; /* Sørger for at bildet dekker hele bakgrunnen uten forvrengning. */
+        background-position: center; /* Sentraliserer bildet i wrapperen. */
+        background-repeat: no-repeat; /* Hindrer gjentakelse av bakgrunnsbildet. */
+        justify-content: center; /* Sentraliserer innholdet horisontalt. */
+        height: auto; /* Justerer høyden automatisk for å passe innholdet. */
+        display: block; /* Gjør wrapperen til et blokk-element for bedre kontroll. */
+        width: auto; /* Justerer bredden automatisk basert på innholdet. */
     }
 
+
+    .Studenthistorier-wrapper a {
+        color: #000; /* Setter lenkefargen til svart. */
+    }
 
     .Studenthistorier-text {
-        
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 2em;
-        border-radius: 8px;
-        color: #000; 
+        background-color: rgba(255, 255, 255, 0.7); /* Semitransparent bakgrunnsfarge for tekstfeltet. */
+        padding: 2em; /* Lagt til luft rundt innholdet. */
+        border-radius: 8px; /* Runder hjørnene på tekstfeltet. */
+        color: #000; /* Setter tekstfargen til svart for god kontrast mot bakgrunnen. */
+    }
+
+    .footer {
+        width: 100%; /* Fyller hele bredden på skjermen for responsiv design. */
     }
 }
-
-
-   /* -------------------------------------------------------------------------Kode for Github------------------------------------------------------ */
-
-
-
-.gridGIT-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5em;
-
-    margin: 0 auto;
-}
-
-/* Seksjoner fi */
-.intro, .fordeler, .utfordringer, .images {
-    background-color: #f4f4f4;
-    padding: 1em;
-    border-radius: 8px;
-}
-
-/* Lists Styling */
-header nav ul{
-    margin: 0;
-}
-header nav ul li a{
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        text-align: center;
-    
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1em;
-}
-
-.image-grid img {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-.containerGIT {
-    position: relative;
-    width: 100%;
-    height: 40em;
-    overflow: hidden;
-   }
-   
-   .AIbilde {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   }
-   
-   .AIBildeTekstContainer {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.6); 
-    color: white;
-    text-align: center;
-    padding: 1em;
-    border-radius: 8px;
-    max-width: 80%
-   }
-
-   .AIBildeTekstContainer p {
-    color: white;
-   }
-   
-   .content-section {
-    padding: 2em;
-    background-color: #f8f9fa;
-   }
-   .screenshots-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-    grid-template-rows: auto; /* Dynamic row heights */
-    gap: 1em; /* Space between items */
-    margin: 0 auto; /* Center the grid */
-    padding: 1em;
-}
-
-
-.screenshot-item {
-    background-color: rgba(200, 200, 255, 0.3);
-    padding: 1em;
-    border-radius: 5px; 
-    height: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.screenshot-item h4{
-    padding-bottom: 1em;
-}
-
-.screenshot-item img {
-    width: 100%;
-    height: auto;
-    display: block; 
-    object-fit: contain; 
-    border-radius: 5px;
-}
-
-
-    
-
-   
-   .text-item {
-    grid-column: 1 / -1; 
-    background-color:#F4F5F7;
-    padding: 1.5em;
-    border-radius: 8px;
-    text-align: left;
-   
-   }
-   
-   .text-item p{
-    margin: 1em;
-    text-align: left;
-    font-size: 1.1em; 
-    line-height: 1.8; 
-    color: #333;
-   }
-   
- .rights{
-    text-align: center;
-    background-color:#F4F5F7;
-   }
 
 
    /*------------------------------------------------------------------------------- Activity page ABBA------------------------------------------------------------------------------------------------------------------------------*/
@@ -1642,9 +1499,7 @@ figcaption {
 }
 .social-links {
     list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 0.25em;
+    gap: 0.5em;
 }
 .social-links li {
     display: inline;
