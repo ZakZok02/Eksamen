@@ -700,11 +700,12 @@ header nav ul li a {
     width: 100%; /* Gjør containeren 100% bredde av dens overordnede element. */
     height: auto; /* Setter en fast høyde på 40em for containeren. */
     overflow: hidden; /* Skjuler innhold som går utenfor containerens grenser. */
+
 }
 
 .AIbilde {
     width: 100%; /* Bildet fyller hele bredden til containeren. */
-    height: 100%; /* Bildet fyller hele høyden til containeren. */
+    height: 40em; /* Bildet fyller hele høyden til containeren. */
     object-fit: cover; /* Bildet tilpasses slik at det dekker hele containeren, uten deformasjon. */
 }
    
