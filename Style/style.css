@@ -1,4 +1,5 @@
 
+
 /* Global stilinnstillinger */
 *{
     font-family: Moderat,Avenir,Helvetica,Arial,sans-serif; /* Definerer font-stil for hele siden */
@@ -77,10 +78,7 @@ nav ul li a:hover {
     background-position: center; /* Sentrer bildet */
 }
 
-h1{ 
-    font-size: 2rem; /* øker overskrift størrelsen */
-   
-}
+
 
 .img-container img {
     padding-left: 8.3em; /* Avstand til venstre */
@@ -667,38 +665,10 @@ header nav ul li a {
     text-align: center; /* Sentrerer teksten horisontalt i hver lenke. */
 }
 
-.gridGIT-container {
-    display: grid; /* Angir at dette elementet bruker CSS Grid-layout. Gjør det enkelt å organisere innhold i rader og kolonner. */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lager dynamiske kolonner som er minst 300px brede, men kan strekke seg for å fylle plassen (1fr). 'auto-fit' justerer antall kolonner basert på tilgjengelig plass. */
-    gap: 1.5em; /* Legger til en avstand på 1.5em mellom grid-elementene. */
-    margin: 0 auto; /* Sentrerer grid-containeren horisontalt på siden. */
-}
-
-/* Sections in the Grid */
-.intro, .fordeler, .utfordringer, .images {
-    background-color: #f4f4f4; /* Setter en lys grå bakgrunnsfarge for disse seksjonene. */
-    padding: 1em; /* Legger til innvendig avstand (padding) rundt innholdet i seksjonene. */
-    border-radius: 8px; /* Lager avrundede hjørner med en radius på 8px for en mykere visuell effekt. */
-}
-
-
-.image-grid {
-    display: grid; /* Bruker CSS Grid for å organisere bilder i et rutenett. */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Oppretter responsive kolonner som er minst 150px brede, men kan vokse til å fylle plassen. */
-    gap: 1em; /* Setter en avstand på 1em mellom grid-elementene. */
-}
-
-.image-grid img {
-    width: 100%; /* Bildene fyller bredden av hver grid-celle. */
-    border: 1px solid #ddd; /* Legger til en tynn, lys grå kantlinje rundt bildene. */
-    border-radius: 5px; /* Avrunder kantene på bildene med en radius på 5px. */
-    object-fit: cover;
-}
-
 .containerGIT {
     position: relative; /* Gjør det mulig å plassere absolutte elementer inni denne containeren. */
     width: 100%; /* Gjør containeren 100% bredde av dens overordnede element. */
-    height: auto; /* Setter en fast høyde på 40em for containeren. */
+    height: 40em; /* Setter en fast høyde på 40em for containeren. */
     overflow: hidden; /* Skjuler innhold som går utenfor containerens grenser. */
 }
 
@@ -771,19 +741,111 @@ header nav ul li a {
     text-align: left; /* Justerer teksten til venstre inne i elementet. */
 }
    
-.text-item p {
+.text-item p, .text-item ul {
     margin: 1em; /* Legger til avstand rundt avsnittene i elementet. */
     text-align: left; /* Justerer teksten til venstre for lesbarhet. */
-    font-size: 1.1em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+    font-size: 1.2em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
     line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
     color: #333; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
 }
 
 
+
 .rights {
     text-align: center; /* Justerer teksten horisontalt i midten av containeren. */
     background-color: #F4F5F7; /* Setter en lys grå bakgrunn for å skille denne delen visuelt fra andre seksjoner. */
+    padding: 0.5em; /* litt invendig avstand*/
+    
 }
+/* Kode for accessibility  */
+
+.Accessibility_container {
+position: relative;
+width: 100%;
+height: 40em;
+overflow: hidden;
+}
+
+.Access_photo {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.AI_AccessContainer {
+position: absolute; 
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%); 
+z-index: 1;
+background-color: rgba(0, 0, 0, 0.5); 
+text-align: center;
+padding: 2em;
+border-radius: 8px;
+max-width: 70%
+}
+
+
+
+
+.testing_results{
+    background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+    padding: 1.5em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+    border-radius: 8px; /* Gjør hjørnene avrundede med en radius på 8px for en mykere visuell effekt. */
+}
+
+.testing_results h2{
+    font-size: 2rem;
+    text-align: left;
+}
+
+.screenshots_title h3{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.testing_results p{
+
+    margin: 1.2em; /* Legger til avstand rundt avsnittene i elementet. */
+    text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+    font-size: 1.5em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+    line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+    color: #331; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+}
+
+.univers_design_text ul{
+    background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+    padding: 1.5em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+    margin: 2.2em;
+    border-radius: 8px; /* Gjør hjørnene avrundede med en radius på 8px for en mykere visuell effekt. */
+    text-align: left; /* Justerer teksten til venstre inne i elementet. */
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.univers_design_text h3{
+
+    text-align: left;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.univers_design_text p{
+    margin: 1.2em; /* Legger til avstand rundt avsnittene i elementet. */
+    text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+    font-size: 1.3rem; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+    line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+    color: #331; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+}
+
+.rights p{
+  
+    font-size: 1.7rem;
+}
+
 
 /* Mobile (between 150px && 480px) */
 /* CSS-stil for små skjermer, fokuserer på responsive design og vertikal stabling. */
@@ -941,10 +1003,158 @@ header nav ul li a {
         display: flex; /* Fleksibel layout. */
         flex-direction: column; /* Vertikal stabling. */
         align-items: center; /* Sentrerer innholdet. */
-        margin: 1.7em auto; /* Sentraliserer wrapper. */
-        padding: 2%; /* Indre avstand for pusterom. */
+        margin: 1em auto; /* Sentraliserer wrapper. */
+        padding: 2em; /* Indre avstand for pusterom. */
         border-radius: 5px; /* Avrundede hjørner. */
     }
+
+       /* kode for github */
+
+       .screenshots-grid {
+        display: grid;
+        justify-content: center;
+        gap: 4em; /* Space between items */
+        margin: 1.7em auto; /* Center the grid */
+      
+    }
+
+    .screenshot-item h4 {
+        margin-bottom: -0.5em ; /* Legger til avstand under overskriften. */
+    }
+
+    .screenshot-item img {
+    width: 100%; /* Bildet fyller hele bredden til containeren. */
+    height: 100%; /* Bildets høyde justeres automatisk for å opprettholde proporsjoner. */
+    display: block; /* Hindrer uønsket mellomrom under bildet. */
+    object-fit: contain; /* Bildet tilpasses slik at hele bildet vises, uten å bli beskåret. */
+    border-radius: 5px; /* Gjør kantene på bildet avrundede. */
+
+   }
+
+
+     
+    .text-item h2{
+        font-size: 2em;
+    }
+
+    
+    .text-item p {
+      
+        font-size: 1.7em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        
+    }
+    .text-item h3{
+        font-size: 1.9em;
+    }
+
+    .text-item ul{
+        font-size: 1.6em;
+        line-height: 1.8;
+    }
+
+
+    .rights {
+       
+        font-size: 1.2em;
+        padding: 0.5em 0.1em;
+        margin: 0;
+    }
+
+    /* Kode for Accessibility */
+
+    .AI_AccessContainer {
+        position: absolute; 
+        top: 25%; 
+        left: 50%;     
+       
+    }
+
+    .content-section .testing_results{
+        margin-top: -20em;
+    }
+
+   
+    .screenshots-grid {
+       
+        gap: 3em; /* Space between items */
+        margin: 2.2em auto; /* Center the grid */
+        padding: 1.4em;
+    }
+
+    
+
+
+    .testing_results{
+        background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+        padding: 1.2em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+   
+    }
+
+    .testing_results h2{
+        font-size: 1.8rem;
+       
+       
+    }
+
+    .screenshots_title h3{
+        text-align: center;
+        margin-bottom: 2.6rem;
+        padding: 2.2rem;
+        font-size: 1.4rem;
+    }
+
+    .testing_results p{
+
+        margin: 1.2em; /* Legger til avstand rundt avsnittene i elementet. */
+        text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+        font-size: 1.3em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        color: #331; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+    }
+
+    .univers_design_text ul{
+        background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+        padding: 1.3em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+        margin: 2em;
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    .univers_design_text h3{
+
+        text-align: left;
+        margin-bottom: 2.3rem;
+        padding: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .univers_design_text p{
+        margin: 1.2em; /* Legger til avstand rundt avsnittene i elementet. */
+        text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+        font-size: 1.3rem; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        color: #331; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+    }
+
+    .rights p{
+    
+        font-size: 1.2rem;
+        padding-bottom: 1.3rem 0;
+    }
+
+        
+
+        
+    
+
+    
+
+    
+
+    
+    
+
 }
 
    
@@ -964,6 +1174,12 @@ header nav ul li a {
     .screenshot-item {
         height: 15em; /* Justerer høyden for mindre skjermer. */
     }
+
+    
+   
+
+
+    
 }
 
 /* tablet size screen */
@@ -1088,6 +1304,60 @@ header nav ul li a {
     tbody td {
         padding: 0.3em; /* Gir innvendig plass til cellene for bedre lesbarhet. */
     }
+
+       /* kode for github */
+
+       
+    .screenshots-grid {
+        gap: 2em; /* Space between items */
+        margin: 0.4em auto; /* Center the grid */
+        padding: 2em;
+    }
+
+    .screenshot-item {
+        background-color: rgba(200, 200, 255, 0.3); /* Gir en lys blå bakgrunnsfarge med 30% opasitet. */
+        padding: 1em; /* Gir innvendig avstand rundt innholdet i hvert element. */
+        border-radius: 5px; /* Gjør hjørnene avrundede. */
+        height: auto; /* Lar høyden justeres automatisk basert på innholdet. */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legger til en subtil skygge for å gi dybde. */
+        text-align: center; /* Sentrerer tekst og innhold horisontalt. */
+    }
+
+    
+       .image-grid {
+        display: grid; /* Bruker CSS Grid for å organisere bilder i et rutenett. */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Oppretter responsive kolonner som er minst 150px brede, men kan vokse til å fylle plassen. */
+        gap: 2em; /* Setter en avstand på 1em mellom grid-elementene. */
+    }
+
+     
+    .text-item h2{
+        font-size: 2.2em;
+    }
+
+    
+    .text-item p {
+      
+        font-size: 2em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        
+    }
+    .text-item h3{
+        font-size: 2.1em;
+    }
+
+    .text-item ul{
+        font-size: 2em;
+        line-height: 1.8;
+    }
+
+
+    .rights {
+       
+        font-size: 1.7em;
+        padding-bottom: 0.5em;
+    }
+
     
 }
 
@@ -1154,6 +1424,119 @@ header nav ul li a {
         padding:0.6em ; /* Gir luft rundt innholdet. */
         gap: 0.7em; /* Justerer avstanden mellom barnelementene. */
     }
+
+    /* kode for github */
+
+    .screenshots-grid {
+       
+        gap: 4em; /* Space between items */
+        margin: 2.2em auto; /* Center the grid */
+        padding: 1.4em;
+    }
+
+        
+    .screenshot-item {
+       
+        height: 100%; /* Lar høyden justeres automatisk basert på innholdet. */
+       
+    }
+
+   
+    
+    
+    .text-item h2{
+        font-size: 2.5em;
+    }
+
+    
+    .text-item p {
+      
+        font-size: 2.2em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        
+    }
+    .text-item h3{
+        font-size: 2.3em;
+    }
+
+    .text-item ul{
+        font-size: 2.2em;
+        line-height: 1.8;
+    }
+
+
+    .rights {
+       
+        font-size: 2.1em;
+        padding-bottom: 0.5em;
+    }
+
+    /* kode for Accessibility */
+
+    .testing_results{
+        background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+        padding: 1.2em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+   
+    }
+
+    .testing_results h2{
+        font-size: 2.8rem;
+       
+       
+    }
+
+   
+
+    .testing_results p{
+
+        margin: 1.2em; /* Legger til avstand rundt avsnittene i elementet. */
+        text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+        font-size: 2.4em; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        color: #331; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+    }
+
+    .screenshots_title h3{
+        text-align: center;
+        margin-bottom: 2.6rem;
+        padding: 2.2rem;
+        font-size: 2.5rem;
+    }
+
+    .univers_design_text ul{
+        background-color: #F4F5F7; /* Setter en lys grå bakgrunnsfarge for elementet. */
+        padding: 1.3em; /* Legger til 1.5em med innvendig avstand rundt innholdet i tekst-elementet. */
+        margin: 2em;
+        font-size: 2.4rem;
+        line-height: 2;
+    }
+
+    .univers_design_text h3{
+
+        text-align: left;
+        margin-bottom: 2.3rem;
+        padding: 1.8rem;
+        font-size: 2.5rem;
+    }
+
+    .univers_design_text p{
+        margin: 1.2em; /* Legger til avstand rundt avsnittene i elementet. */
+        text-align: left; /* Justerer teksten til venstre for lesbarhet. */
+        font-size: 2.4rem; /* Gjør teksten litt større enn standard tekststørrelse for å fremheve innholdet. */
+        line-height: 1.8; /* Øker linjeavstanden for bedre lesbarhet, spesielt i lengre tekstblokker. */
+        color: #331; /* Gir teksten en mørk grå farge, som er mindre skarp enn svart og mer behagelig for øynene. */
+    }
+
+    .rights p{
+    
+        font-size: 2.4rem;
+    }
+
+
+   
+
+
+
 }
 
 /* skjermstørrelser mellom 120px og 1300px. Dette kan inkludere små skjermer som mobiltelefoner, 
@@ -1205,6 +1588,12 @@ samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
     .footer {
         width: 100%; /* Fyller hele bredden på skjermen for responsiv design. */
     }
+
+    .screenshot-item h4{
+        font-size: 1.4em;
+    }
+
+     
 }
 
 
@@ -1618,7 +2007,7 @@ figcaption {
     }
 }
 
- /*------------------------------------------------------------------------------- Activity page ABBA SLUTT------------------------------------------------------------------------------------------------------------------------------*/
+ /*------------------------------------------------------------------------------- Activity page SLUTT------------------------------------------------------------------------------------------------------------------------------*/
   
 
     
