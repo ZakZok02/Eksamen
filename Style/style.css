@@ -1932,9 +1932,9 @@ figcaption {
     .gallery {
         grid-template-columns: 1fr;
     }
-    
+
     .content-section .testing_results{
-        margin-top: -10em;
+        margin-top: -20em;
     }
 
     .activity-card {
