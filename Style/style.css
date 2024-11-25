@@ -725,6 +725,13 @@ header nav ul li a {
     text-align: center; /* Sentrerer tekst og innhold horisontalt. */
 }
 
+.screenshot-item img {
+    width: 100%; /* Bildet fyller hele bredden til containeren. */
+    height: auto; /* Bildets høyde justeres automatisk for å opprettholde proporsjoner. */
+    display: block; /* Hindrer uønsket mellomrom under bildet. */
+    object-fit: contain; /* Bildet tilpasses slik at hele bildet vises, uten å bli beskåret. */
+    border-radius: 5px; /* Gjør kantene på bildet avrundede. */
+}
 
 .screenshot-item img {
     object-fit: contain; /* Bildet tilpasses slik at hele bildet vises, uten å bli beskåret. */
