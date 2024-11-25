@@ -1599,6 +1599,10 @@ samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
     .screenshot-item h4{
         font-size: 1.4em;
     }
+    .content-section .testing_results{
+        margin-top: -5em;
+    }
+
 
      
 }
