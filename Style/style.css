@@ -29,6 +29,9 @@ h3 {
     background-color: #f5f3f4; /* Lys bakgrunnsfarge */
     padding: 0.5em 0.5em 0.5em 1em; /* Innvendig avstand med fokus på venstre */
 }
+h4{
+    padding-bottom: 0.5em;
+}
 
 p {
     font-size: 1.2em; /* Skriftstørrelse for avsnitt */
