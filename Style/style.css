@@ -702,6 +702,9 @@ header nav ul li a {
     padding: 2em; /* Gir rikelig med innvendig avstand rundt seksjonen. */
     background-color: #f8f9fa; /* Gir seksjonen en lys bakgrunnsfarge for bedre lesbarhet. */
 }
+.content-section .testing_results{
+    margin-top:0em;
+}
 
 .screenshots-grid {
     display: grid;
@@ -1060,9 +1063,6 @@ max-width: 70%
        
     }
 
-    .content-section .testing_results{
-        margin-top: -5em;
-    }
 
    
     .screenshots-grid {
@@ -2002,11 +2002,7 @@ figcaption {
     }
 }
 
-@media (min-width: 100px) and (max-width: 535px){
-    .content-section .testing_results{
-        margin-top: -20em;
-    }
-}
+
 
  /*------------------------------------------------------------------------------- Activity page SLUTT------------------------------------------------------------------------------------------------------------------------------*/
   
