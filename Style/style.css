@@ -1933,10 +1933,6 @@ figcaption {
         grid-template-columns: 1fr;
     }
 
-    .content-section .testing_results{
-        margin-top: -16em;
-    }
-
     .activity-card {
         flex-direction: column;
         align-items: center;
@@ -2020,6 +2016,9 @@ figcaption {
 @media (min-width: 100px) and (max-width: 535px){
     .gallery {
         grid-template-columns: repeat(1, 1fr)!important;
+    }
+    .content-section .testing_results{
+        margin-top: -16em; 
     }
 }
 
