@@ -1932,6 +1932,11 @@ figcaption {
     .gallery {
         grid-template-columns: 1fr;
     }
+    
+    .content-section .testing_results{
+        margin-top: -10em;
+    }
+
     .activity-card {
         flex-direction: column;
         align-items: center;
