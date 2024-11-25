@@ -70,9 +70,22 @@
                 
                     <img src="../Style/Bilder/IndexAcc.webp" alt="Bilde av Lighthouse" />
                 </section>
+
                 <section class="screenshot-item">
                    
                     <img src="../Style/Bilder/MobilACC.webp" alt="Bilde av Lighthouse" />
+                </section>
+
+                <section class="screenshot-item">
+               
+                    <img src="../Style/Bilder/LangAttribut.webp" alt="Bilde av lang attribute" />
+                    
+                </section>
+
+                <section class="screenshot-item">
+               
+                    <img src="../Style/Bilder/Alt-tekst.webp" alt="Bilde av alt tekst for bilder" />
+                    
                 </section>
             </section>
 
@@ -85,21 +98,37 @@
                             detect:
                         </p>
                         <ul>
-                            <li>Semantic HTML Structure: We prioritized the use of semantic HTML elements
+                            <li>Language Attributes:
+                                We have Implemented the lang attribute (e.g., <html lang="en">) which specifies the primary language of the content, improving pronunciation and language 
+                                recognition for screen readers. For multilingual content, we used lang on specific elements to help screen readers switch appropriately.</li><br>
+
+                            <li>Descriptive Alt Text for Images:
+                                Every image was assigned by meaningful alt text to describe its content and purpose. For decorative images, we used alt="" to ensure they are 
+                                    skipped by screen readers, reducing unnecessary clutter.
+                            </li><br>
+                            
+                             <li>Semantic HTML Structure: We prioritized the use of semantic HTML elements
                                 to provide a clear document structure to improve screen reader navigation and
-                                overall content comprehension.</li>
+                                overall content comprehension.</li><br>
 
                             <li>Color Contrast and Text Resizing: We carefully selected color schemes to
                                 maintain a minimum contrast ratio for normal text and minimum contrast ratio
                                 for large text. Additionally, we used relative units (em and rem) for font sizes to
-                                ensure text resizes properly when users adjust their browser settings:</li>
+                                ensure text resizes properly when users adjust their browser settings:</li><br>
                             
                             <li>
                                 ARIA Attributes for Dynamic Content: For dynamic content that can&#39;t be easily
                                 conveyed through semantic HTML alone, we utilized ARIA attributes: This
                                 ensures that screen reader users are informed of important updates without
                                 interrupting their current task.
-                            </li>
+                            </li><br>
+
+                            <li>
+                                Form Accessibility Enhancements: 
+		                        We used label elements linked to form inputs via the "for" attribute to improve accessibility for screen readers.
+		                        We also Added helpful cues like aria-describedby for fields requiring additional guidance, such as error messages or hints.
+                            </li><br>
+
                             <li>
                                 Image Compression: JPG/PNG to WebP:
                                 We have converted images from JPG and PNG formats to WebP which is a vital optimization step for modern web design. 
