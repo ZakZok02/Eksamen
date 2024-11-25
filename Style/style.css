@@ -1182,7 +1182,7 @@ max-width: 70%
     
 }
 
-@media (max-width:1370px) {
+@media ((min-width: 900px) and (max-width:1300px)) {
     .contact1-info{
         flex-wrap: wrap;
     }
