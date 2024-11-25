@@ -707,9 +707,10 @@ header nav ul li a {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
     grid-template-rows: auto; /* Dynamic row heights */
-    gap: 1em; /* Space between items */
+    gap: 2em; /* Space between items */
     margin: 0 auto; /* Center the grid */
     padding: 1em;
+    position: relative;
 }
 
 .screenshot-item {
@@ -721,16 +722,10 @@ header nav ul li a {
     text-align: center; /* Sentrerer tekst og innhold horisontalt. */
 }
 
-.screenshot-item h4 {
-    padding-bottom: 1em; /* Legger til avstand under overskriften. */
-}
 
 .screenshot-item img {
-    width: 100%; /* Bildet fyller hele bredden til containeren. */
-    height: auto; /* Bildets høyde justeres automatisk for å opprettholde proporsjoner. */
-    display: block; /* Hindrer uønsket mellomrom under bildet. */
     object-fit: contain; /* Bildet tilpasses slik at hele bildet vises, uten å bli beskåret. */
-    border-radius: 5px; /* Gjør kantene på bildet avrundede. */
+    border-radius: 8px; /* Gjør kantene på bildet avrundede. */
 }
 
 .text-item {
@@ -1017,11 +1012,6 @@ max-width: 70%
         margin: 1.7em auto; /* Center the grid */
       
     }
-
-    .screenshot-item h4 {
-        margin-bottom: -0.5em ; /* Legger til avstand under overskriften. */
-    }
-
     .screenshot-item img {
     width: 100%; /* Bildet fyller hele bredden til containeren. */
     height: 100%; /* Bildets høyde justeres automatisk for å opprettholde proporsjoner. */
@@ -1170,9 +1160,6 @@ max-width: 70%
         grid-template-columns: 1fr !important; /* Enkel kolonne for responsiv layout. og bruk av !important er for 
         å overstyre strukturen til nettside */
         gap: 1em; /* Gir avstand mellom grid-elementer. */
-    }
-    .screenshot-item {
-        height: 15em; /* Justerer høyden for mindre skjermer. */
     }
 
     
@@ -1594,10 +1581,6 @@ samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
 
     .footer {
         width: 100%; /* Fyller hele bredden på skjermen for responsiv design. */
-    }
-
-    .screenshot-item h4{
-        font-size: 1.4em;
     }
     .content-section .testing_results{
         margin-top: -5em;
