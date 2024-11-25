@@ -1182,6 +1182,13 @@ max-width: 70%
     
 }
 
+@media (max-width:1200px) {
+    .contact1-info{
+        flex-wrap: wrap;
+    }
+    
+}
+
 /* tablet size screen */
 
 @media ((min-width:481px) and (max-width:768px)) {
@@ -1587,6 +1594,9 @@ samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
 
     .footer {
         width: 100%; /* Fyller hele bredden på skjermen for responsiv design. */
+    }
+    .contact1-details .details{
+        
     }
 
     .screenshot-item h4{
