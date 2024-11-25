@@ -1017,14 +1017,6 @@ max-width: 70%
         margin: 1.7em auto; /* Center the grid */
       
     }
-    .screenshot-item img {
-    width: 100%; /* Bildet fyller hele bredden til containeren. */
-    height: 100%; /* Bildets høyde justeres automatisk for å opprettholde proporsjoner. */
-    display: block; /* Hindrer uønsket mellomrom under bildet. */
-    object-fit: contain; /* Bildet tilpasses slik at hele bildet vises, uten å bli beskåret. */
-    border-radius: 5px; /* Gjør kantene på bildet avrundede. */
-
-   }
 
 
      
@@ -1316,7 +1308,6 @@ max-width: 70%
         border-radius: 5px; /* Gjør hjørnene avrundede. */
         height: auto; /* Lar høyden justeres automatisk basert på innholdet. */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legger til en subtil skygge for å gi dybde. */
-        text-align: center; /* Sentrerer tekst og innhold horisontalt. */
     }
 
     
