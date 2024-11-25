@@ -1595,9 +1595,6 @@ samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
     .footer {
         width: 100%; /* Fyller hele bredden på skjermen for responsiv design. */
     }
-    .contact1-details .details{
-        
-    }
 
     .screenshot-item h4{
         font-size: 1.4em;
@@ -1607,7 +1604,7 @@ samt mellomstore skjermer som tablets og små til mellomstore desktop-enheter*/
 }
 
 
-   /*------------------------------------------------------------------------------- Activity page ABBA------------------------------------------------------------------------------------------------------------------------------*/
+   /*------------------------------------------------------------------------------- Activity page ------------------------------------------------------------------------------------------------------------------------------*/
    :root {
     --primary-color: #006400;
     --secondary-color: #f4f3f1;
