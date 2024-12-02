@@ -4,20 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility</title>
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="../Style/style.css">
     
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+            
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/Github.html">Github</a></li>
+                <li><a href="../pages/Activity.html"> Activity</a></li>
+            </ul>
+        </nav>
 
     </header>
 
+   
+
     <main>
+
+        <section class="Accessibility_container">
+            <img src="../Style/Bilder/AccessibilityTesting.webp" alt="Accessibility Background" class="Access_photo">
+            <section class="AI_AccessContainer">
+                <h1>Testing Accessibility</h1>
+              
+            </section>
+        </section>
+
+        <section class="content-section">
+            <section class="testing_results">
+                <h2>Automated testing results</h2>
+                <p>
+                    <br> We conducted an automated test using the lighthouse Chrome DevTools browser extension.
+                    <br> 
+                    The results revealed several areas for improvement. The automated test tools cannot catch all accessibility issues. So we used manual testing and published our code public to ensure comprehensive accessibility, and to
+                    see if it is needed improvement.
+                </p>
+
+             
+             
+            </section>
+            
+            <section class="screenshots_title">
+                <h3>
+                    Screenshots of automated test results.
+                    
+                </h3>
+            </section>
+         
+          
+            <section class="screenshots-grid">
+                
+                <section class="screenshot-item">
+               
+                    <img src="../Style/Bilder/Skjermbilde 2024-11-23 kl. 16.38.47.webp" alt="Bilde av Lighthouse" />
+                    
+                </section>
+    
+                <section class="screenshot-item"><h4></h4>
+                    <img src="../Style/Bilder/Skjermbilde 2024-11-23 kl. 16.39.50.webp" alt="Bilde av Lighthouse" />
+                </section>
+    
+                <section class="screenshot-item">
+                
+                    <img src="../Style/Bilder/Skjermbilde 2024-11-23 kl. 16.40.36.webp" alt="Bilde av Lighthouse" />
+                </section>
+                <section class="screenshot-item">
+                   
+                    <img src="../Style/Bilder/Skjermbilde 2024-11-23 kl. 17.56.27.webp" alt="Bilde av Lighthouse" />
+                </section>
+
+               
+               
+                <section class="univers_design_text">
+                    <h3>Universal design choices beyond automated testing.</h3>
+                        <p>
+                            We implemented several coding choices that go beyond what automated tests can
+                            detect:
+                        </p>
+                        <ul>
+                            <li>Semantic HTML Structure: We prioritized the use of semantic HTML elements
+                                to provide a clear document structure to improve screen reader navigation and
+                                overall content comprehension.</li>
+
+                            <li>Color Contrast and Text Resizing: We carefully selected color schemes to
+                                maintain a minimum contrast ratio for normal text and minimum contrast ratio
+                                for large text. Additionally, we used relative units (em and rem) for font sizes to
+                                ensure text resizes properly when users adjust their browser settings:</li>
+                            
+                            <li>
+                                ARIA Attributes for Dynamic Content: For dynamic content that can&#39;t be easily
+                                conveyed through semantic HTML alone, we utilized ARIA attributes: This
+                                ensures that screen reader users are informed of important updates without
+                                interrupting their current task.
+                            </li>
+                            <li>
+                                Image Compression: JPG/PNG to WebP:
+                                We have converted images from JPG and PNG formats to WebP which is a vital optimization step for modern web design. 
+                                <br>
+                                WebP offers superior compression and quality preservation, reducing image file sizes significantly compared to traditional formats. 
+                                This improves loading times and overall user experience, especially for mobile users with limited bandwidth.
+                            </li>
+                        </ul>
+
+                        <p>
+                            Overall, by implementing these universal design principles and going beyond
+                            automated testing, we strive to create a more inclusive and accessible web
+                            experience for all users. And we tested with 4 students to get feedback from them
+                            essential components of our ongoing accessibility efforts.
+                        </p>
+                      
+                </section>
+            </section>
+        </section>
 
     </main>
 
-    <footer>
-        
+    <footer class="rights">
+        <p>© 2024 Accessibility Testing Rapport</p>
     </footer>
+</html>
 </body>
 </html>
